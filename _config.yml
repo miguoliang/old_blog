@@ -43,3 +43,6 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+webmaster_verifications:
+  google: c_dy3nviktjVLRn596isPsioYIJ-DJbwvi3a-IaPpUU
