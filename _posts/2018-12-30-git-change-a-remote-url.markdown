@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Changing a remote's URL"
+title:  "Git: Changing a remote's URL"
 date:   2018-12-30 19:22:27 +0800
 categories: git
 ---
