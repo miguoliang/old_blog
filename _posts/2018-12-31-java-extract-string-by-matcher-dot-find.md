@@ -6,7 +6,7 @@ categories: java
 ---
 First of all, you must be clear on the differences between `Matcher.matches()` and `Matcher.find()`. 
 
-- The formal means whether a string matches your regular expression strictly.
+- The former means whether a string matches your regular expression strictly.
 - The latter means trying to find a substring that matches the given regular expression in the given text.
 
 It looks not accessible to comprehension, so let me show two cases below.
