@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Java: Extract string by Matcher.find()"
-date:   2018-12-30 19:22:27 +0800
+date:   2018-12-31 19:22:27 +0800
 categories: java
 ---
 First of all, you must be clear on the differences between `Matcher.matches()` and `Matcher.find()`. 
