@@ -10,9 +10,9 @@ categories: webpack
 1. Run `ng build --prod --stats-json`
 1. Run `npm install --save-dev webpack-bundle-analyzer`
 1. Once installed add the following entry to the npm scripts in the `package.json`: 
-```json
+    ```json
     "bundle-report": "webpack-bundle-analyzer dist/stats.json
-```
+    ```
 1. Once added run the following command: `npm run bundle-report`
 
 After the above, you may get a graphy like the below:
