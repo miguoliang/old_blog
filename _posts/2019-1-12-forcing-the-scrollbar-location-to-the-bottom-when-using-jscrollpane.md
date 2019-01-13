@@ -6,6 +6,7 @@ categories: java
 ---
 1. Put your `JTextArea` into a `JScrollPane`
 1. Scroll in the `ChangeListener` of `JScrollPane`
+
 ```java
     mTextAreaScroll.getViewport().addChangeListener(e -> {
         JScrollBar scrollBar = mTextAreaScroll.getVerticalScrollBar();
