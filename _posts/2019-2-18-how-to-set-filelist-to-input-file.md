@@ -11,4 +11,4 @@ const file = new File([''], 'test-file.jpg', { lastModified: new Date().getTime(
 dataTransfer.items.add(file);
 ```
 ### References
-- [Users Jobs Teams Q&A for work Learn More How to execute only one test spec with angular-cli](https://stackoverflow.com/questions/40683673/how-to-execute-only-one-test-spec-with-angular-cli)
+- Demo(https://embed.plnkr.co/HpBkr4/)
