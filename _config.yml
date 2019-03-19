@@ -23,6 +23,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://miguoliang.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: miguoliang
 github_username:  miguoliang
+google_analytics: UA-136531912-1
 
 # Build settings
 markdown: kramdown
@@ -46,3 +47,6 @@ plugins:
 
 webmaster_verifications:
   google: c_dy3nviktjVLRn596isPsioYIJ-DJbwvi3a-IaPpUU
+  bing: 1F25C7FEE6EA0EA3DFB94AB5C17E3965
+  yandex: bfcf98bfa420e600
+  baidu: wyRKL4aXeh
