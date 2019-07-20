@@ -32,7 +32,23 @@ categories: angular
 <div [formGroup]="form" class="btn-group btn-group-toggle" data-toggle="buttons">
 ```
 
-此处若保留黄色部分代码，那么 Reactive Forms 是接受不到 valueChanges 事件的，即使直接在 HTML 中通过事件绑定也无法触发事件。
+此处若保留`data-toggle="buttons"`，那么 Reactive Forms 是接收不到 `valueChanges` 事件的，即使直接在 HTML 中通过事件绑定也无法触发事件。因此要将`data-toggle="buttons"`去掉，改为人工处理样式变化，也就是借助 Angular 的双向绑定机制，实现后代码如下：
+
+```html
+<div [formGroup]="form" class="btn-group btn-group-toggle">
+        <label class="btn btn-outline-green-500" [class.active]="form.value.orderStatus === 'paid'" for="paid">
+                <input type="radio" formControlName="orderStatus" id="paid" value="paid">Paid
+        </label>
+        <label class="btn btn-outline-green-500" [class.active]="form.value.orderStatus === 'unpaid'" for="unpaid">
+                <input type="radio" formControlName="orderStatus" id="unpaid" value="unpaid">Unpaid
+        </label>
+        <label class="btn btn-outline-green-500" [class.active]="form.value.orderStatus === 'wire'" for="wire">
+                <input type="radio" formControlName="orderStatus" id="wire" value="wire">Wire transfer
+        </label>
+</div>
+```
+
+值得留意的是，此处的 checked 不再需要了。
 
 下面是 [Bootstrap 官方文档](https://getbootstrap.com/docs/4.3/components/buttons/#checkbox-and-radio-buttons) 的叙述，指明了使用限制，这也就佐证了，如果我们使用 Reactive Forms 来控制表单，同时具备 Radio Button Group 的样式，那么就要人工或者使用 Angular 的方法来接管值变更和样式变更的逻辑。
 
