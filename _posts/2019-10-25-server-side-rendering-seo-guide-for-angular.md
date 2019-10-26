@@ -59,7 +59,7 @@ On Load is complete and all the resources on the page (images, CSS, etc.) have f
 
 The time in brackets is the time spent executing JavaScript triggered by the Onload event.
 
-> the SSR could increase the TTFB in theory, because the server holding DOM generation instead of the browser. So you should optimize your code to run fast and make your server hardware good enought. And brandwidth and internet speed are both important here. However, because the browser need not generate mount of DOM nodes, the DOM Interactive Time and the DOM Load Time will be earlier than CSR.
+> SSR could increase the TTFB in theory, because the server holding DOM generation instead of the browser. So you should optimize your code to run fast and make your server hardware good enought. And brandwidth and internet speed are both important here. However, because the browser need not generate mount of DOM nodes, the DOM Interactive Time and the DOM Load Time will be earlier than CSR.
 
 ## Never stop optimize your code
 
