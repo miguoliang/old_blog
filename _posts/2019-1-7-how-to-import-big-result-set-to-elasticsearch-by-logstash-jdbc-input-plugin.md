@@ -8,7 +8,7 @@ Editing your logstash configuration file, and generally you can find it/them in 
 
 For example, if you want to import data from your table in the database, you should have a configuration file, and we name it `logstash-example.conf`, open and append lines like below:
 
-```
+```conf
 input {
     stdin {
     }
@@ -44,6 +44,7 @@ output {
 ```
 
 > __NOTATION__
+
 1. `clean_run` must be `false` for pagination support
 1. `jdbc_paging_enabled` must be `true`
 1. `jdbc_page_size` and `jdbc_fetch_size` are better to be set both, and not be very large if there is some big field in the result set.

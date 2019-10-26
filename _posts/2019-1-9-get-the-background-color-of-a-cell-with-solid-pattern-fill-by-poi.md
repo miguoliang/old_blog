@@ -2,8 +2,9 @@
 layout: post
 title:  "Get the background color of a cell with solid pattern fill by POI"
 date:   2019-1-9 21:56:00 +0800
-categories: webpack
+categories: java poi
 ---
+
 1\. Add dependency in Maven
 
 ```xml
@@ -41,6 +42,7 @@ categories: webpack
 ```
 
 2\. In Java, use `cell.getCellStyle().getFillForegroundColorColor()` instead of `cell.getCellStyle().getFillBackgroundColorColor()`, is it strange? Yes, you need get the background color with the method which name looks like get the foreground color. The reason is that only the foreground tag (`fgColor`) is used if the fill pattern is solid. More detail about that is in the OpenXML Standard, and you could read a tiny document here [https://docs.microsoft.com/en-us/previous-versions/office/developer/office-2010/cc796846%28v%3Doffice.14%29](https://docs.microsoft.com/en-us/previous-versions/office/developer/office-2010/cc796846%28v%3Doffice.14%29).
+
 ```java
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFColor;

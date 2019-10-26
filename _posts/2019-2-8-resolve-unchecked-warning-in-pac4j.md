@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  "How to resolve unchecked warning in Java"
+title:  "Resolve unchecked warning when using DefaultRolesPermissionsAuthorizationGenerator in pac4j"
 date:   2019-2-8 11:35:00 +0800
 categories: java
 ---
+
 In generic object calling, we need pass certain type(s) when we call some function or new some object. A generic object (from pac4j) maybe declares like below:
+
 ```java
 package org.pac4j.core.authorization.generator;
 
@@ -56,8 +58,10 @@ public class DefaultRolesPermissionsAuthorizationGenerator<U extends CommonProfi
     }
 }
 ```
+
 In this declaration, we find that the type parameter `U` is never used in this class.
 But we need to pass a certain type when we create a `DefaultRolesPermissionsAuthorizationGenerator` object too, otherwise we will get a `unchecked` warning when complie files. We should do it like below:
+
 ```java
 final Clients clients = new Clients(headerClient);
 clients.addAuthorizationGenerator(new DefaultRolesPermissionsAuthorizationGenerator<>(
@@ -65,9 +69,11 @@ clients.addAuthorizationGenerator(new DefaultRolesPermissionsAuthorizationGenera
         Sets.newHashSet("post./auth/v1/changepassword", "get./auth/v1/silentlogin/permissions")
 ));
 ```
+
 Notice that we pass empty in `<>`, it means that the compiler can determine, or infer.
 
 ## References
+
 - [What does <> mean for java generics?](https://stackoverflow.com/questions/8660202/what-does-mean-for-java-generics)
 - [What is unchecked cast and how do I check it?](https://stackoverflow.com/questions/2693180/what-is-unchecked-cast-and-how-do-i-check-it)
 - [Pass Compiler Arguments in Maven](http://maven.apache.org/plugins/maven-compiler-plugin/examples/pass-compiler-arguments.html)

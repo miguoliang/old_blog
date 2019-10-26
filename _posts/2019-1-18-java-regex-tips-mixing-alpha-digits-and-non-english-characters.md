@@ -19,5 +19,3 @@ A word that is combined non-English characters with alphadigits characters is se
     System.out.println(without_word_boundary.matcher(case_1).matches()); // true
     System.out.println(without_word_boundary.matcher(case_2).matches()); // true
 ```
-
-Code is [here](https://ideone.com/VjE5I9).
