@@ -5,6 +5,8 @@ date:   2019-10-25 19:31:00 +0800
 categories: seo
 ---
 
+![Server Side Rendering - Search Engine Optimization (SEO) Guide 2019 for Angular](/assets/2019-10-25-server-side-rendering-seo-guide-for-angular/banner.jpg)
+
 ## What is Server Side Rendering (SSR)
 
 Server Side Rendering means that the whole page will be rendered on the server side. By default, all Angular app will be rendered on the client side (the browser), and it is called Client Side Rendering (CSR). Such as PHP, JSP, ASP.NET and so on are SSR technology, but React, Vue and Angular are CSR technology.
