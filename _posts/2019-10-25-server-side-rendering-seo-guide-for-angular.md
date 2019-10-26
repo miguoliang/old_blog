@@ -61,7 +61,7 @@ The time in brackets is the time spent executing JavaScript triggered by the Onl
 
 > SSR could increase the TTFB in theory, because the server holding DOM generation instead of the browser. So you should optimize your code to run fast and make your server hardware good enought. And brandwidth and internet speed are both important here. However, because the browser need not generate mount of DOM nodes, the DOM Interactive Time and the DOM Load Time will be earlier than CSR.
 
-## Never stop optimize your code
+## Never stop optimizing your code
 
 For an Angular app, the key point is your Typescript CODE QUALITY! Good code runs fast, Bad code runs slow. That is very very important for First Paint, SO NEVER STOP YOUR OPTIMIZATION ON YOUR CODE.
 
