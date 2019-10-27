@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Resolve unchecked warning when using DefaultRolesPermissionsAuthorizationGenerator in pac4j"
+title:  "Resolve unchecked warning in pac4j"
 date:   2019-2-8 11:35:00 +0800
 categories: java
 ---
