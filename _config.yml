@@ -44,6 +44,12 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+header_pages:
+  - seo.md
+  # - angular.md
+  - java.md
+  # - linux.md
+  - about.md
 
 webmaster_verifications:
   google: c_dy3nviktjVLRn596isPsioYIJ-DJbwvi3a-IaPpUU
