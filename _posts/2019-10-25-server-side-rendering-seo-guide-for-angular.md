@@ -13,7 +13,7 @@ Server Side Rendering means that the whole page will be rendered on the server s
 
 ## What's the problem without SSR
 
-Generally CSR is good, but it is not SEO friendly. Because the crawler can not download the whole page in time. It can make the crawling sequence longer and longer, so Google can not index this page in a short time. That's bad really? So SSR is supported by Angular to make the app SEO friendly.
+Generally CSR is good, but it is not SEO friendly. Because the crawler can not download the whole page in time. It can make the crawling sequence longer and longer, so crawler can not index this page in a short time. That's bad really? So SSR is supported by Angular to make the app SEO friendly.
 
 ## How to work with SSR
 
