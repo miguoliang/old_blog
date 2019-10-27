@@ -49,6 +49,7 @@ header_pages:
   # - angular.md
   - java.md
   # - linux.md
+  - elasticsearch.md
   - about.md
 
 webmaster_verifications:
