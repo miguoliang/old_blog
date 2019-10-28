@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>How to import big result set to Elasticsearch by Logstash JDBC input plugin | Mi’s Blog</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="How to import big result set to Elasticsearch by Logstash JDBC input plugin" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Editing your logstash configuration file, and generally you can find it/them in /etc/logstash/conf.d; it depends on your settings in logstash.yml that is in /etc/logstash/logstash.yml." />
+<meta property="og:description" content="Editing your logstash configuration file, and generally you can find it/them in /etc/logstash/conf.d; it depends on your settings in logstash.yml that is in /etc/logstash/logstash.yml." />
+<link rel="canonical" href="http://localhost:4000/2019/01/how-to-import-big-result-set-to-elasticsearch-by-logstash-jdbc-input-plugin.html" />
+<meta property="og:url" content="http://localhost:4000/2019/01/how-to-import-big-result-set-to-elasticsearch-by-logstash-jdbc-input-plugin.html" />
+<meta property="og:site_name" content="Mi’s Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-01-07T16:00:00+08:00" />
+<meta name="google-site-verification" content="c_dy3nviktjVLRn596isPsioYIJ-DJbwvi3a-IaPpUU" />
+<meta name="msvalidate.01" content="1F25C7FEE6EA0EA3DFB94AB5C17E3965" />
+<meta name="yandex-verification" content="bfcf98bfa420e600" />
+<meta name="baidu-site-verification" content="wyRKL4aXeh" />
+<script type="application/ld+json">
+{"headline":"How to import big result set to Elasticsearch by Logstash JDBC input plugin","dateModified":"2019-01-07T16:00:00+08:00","datePublished":"2019-01-07T16:00:00+08:00","url":"http://localhost:4000/2019/01/how-to-import-big-result-set-to-elasticsearch-by-logstash-jdbc-input-plugin.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2019/01/how-to-import-big-result-set-to-elasticsearch-by-logstash-jdbc-input-plugin.html"},"description":"Editing your logstash configuration file, and generally you can find it/them in /etc/logstash/conf.d; it depends on your settings in logstash.yml that is in /etc/logstash/logstash.yml.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Mi's Blog" /></head><body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Mi&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/food/index.html">Food</a><a class="page-link" href="/code/index.html">Code</a><a class="page-link" href="/road/index.html">Road</a><a class="page-link" href="/note/index.html">Note</a><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">How to import big result set to Elasticsearch by Logstash JDBC input plugin</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-01-07T16:00:00+08:00" itemprop="datePublished">Jan 7, 2019
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Editing your logstash configuration file, and generally you can find it/them in <code class="highlighter-rouge">/etc/logstash/conf.d</code>; it depends on your settings in <code class="highlighter-rouge">logstash.yml</code> that is in <code class="highlighter-rouge">/etc/logstash/logstash.yml</code>.</p>
+
+<p>For example, if you want to import data from your table in the database, you should have a configuration file, and we name it <code class="highlighter-rouge">logstash-example.conf</code>, open and append lines like below:</p>
+
+<div class="language-conf highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">input</span> {
+    <span class="n">stdin</span> {
+    }
+    <span class="n">jdbc</span> {
+      <span class="n">jdbc_connection_string</span> =&gt; <span class="s2">"jdbc:mysql://host:port/database"</span>
+      <span class="n">jdbc_user</span> =&gt; <span class="s2">"username"</span>
+      <span class="n">jdbc_password</span> =&gt; <span class="s2">"password"</span>
+      <span class="n">jdbc_driver_library</span> =&gt; <span class="s2">"/opt/drivers/mysql-connector-java-5.1.46/mysql-connector-java-5.1.46-bin.jar"</span>
+      <span class="n">jdbc_driver_class</span> =&gt; <span class="s2">"com.mysql.jdbc.Driver"</span>
+      <span class="n">statement</span> =&gt; <span class="s2">"select *, (select destoctof_des from mall_product_destoctof where destoctof_product_id = product_id) as destoctof_des from mall_product where product_updated_time &gt; :sql_last_value"</span>
+      <span class="n">use_column_value</span> =&gt; <span class="n">true</span>
+      <span class="n">tracking_column</span> =&gt; <span class="s2">"product_updated_time"</span>
+      <span class="n">schedule</span> =&gt; <span class="s2">"* * * * *"</span>
+      <span class="n">jdbc_paging_enabled</span> =&gt; <span class="n">true</span>
+      <span class="n">jdbc_page_size</span> =&gt; <span class="m">500</span>
+      <span class="n">jdbc_fetch_size</span> =&gt; <span class="m">500</span>
+      <span class="n">clean_run</span> =&gt; <span class="n">false</span>
+      <span class="n">jdbc_default_timezone</span> =&gt; <span class="s2">"Asia/Shanghai"</span>
+    }
+}
+
+<span class="n">output</span> {
+  <span class="n">stdout</span> {
+    <span class="n">codec</span> =&gt; <span class="n">json_lines</span>
+  }
+  <span class="n">elasticsearch</span> {
+    <span class="n">hosts</span> =&gt; [<span class="s2">"localhost:9200"</span>]
+    <span class="n">index</span> =&gt; <span class="s2">"index_name"</span>
+    <span class="n">document_type</span> =&gt; <span class="s2">"type_name"</span>
+    <span class="n">document_id</span> =&gt; <span class="s2">"%{product_id}"</span>
+  }
+}
+</code></pre></div></div>
+
+<blockquote>
+  <p><strong>NOTATION</strong></p>
+</blockquote>
+
+<ol>
+  <li><code class="highlighter-rouge">clean_run</code> must be <code class="highlighter-rouge">false</code> for pagination support</li>
+  <li><code class="highlighter-rouge">jdbc_paging_enabled</code> must be <code class="highlighter-rouge">true</code></li>
+  <li><code class="highlighter-rouge">jdbc_page_size</code> and <code class="highlighter-rouge">jdbc_fetch_size</code> are better to be set both, and not be very large if there is some big field in the result set.</li>
+</ol>
+
+  </div><a class="u-url" href="/2019/01/how-to-import-big-result-set-to-elasticsearch-by-logstash-jdbc-input-plugin.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Mi&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Mi&#39;s Blog</li><li><a class="u-email" href="mailto:miguoliang61620@gmail.com">miguoliang61620@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/miguoliang"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">miguoliang</span></a></li><li><a href="https://www.twitter.com/miguoliang"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">miguoliang</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>I dream to code for the future of the human being in Google or Tesla. I dream to travel to all the world wonder of Civilization VI in the real world. I dream to taste all delicious food around the world with my wife. I dream to write something helpful for others.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

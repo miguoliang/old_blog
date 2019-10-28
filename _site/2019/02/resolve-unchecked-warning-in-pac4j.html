@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Resolve unchecked warning in pac4j | Mi’s Blog</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="Resolve unchecked warning in pac4j" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="In generic object calling, we need pass certain type(s) when we call some function or new some object. A generic object (from pac4j) maybe declares like below:" />
+<meta property="og:description" content="In generic object calling, we need pass certain type(s) when we call some function or new some object. A generic object (from pac4j) maybe declares like below:" />
+<link rel="canonical" href="http://localhost:4000/2019/02/resolve-unchecked-warning-in-pac4j.html" />
+<meta property="og:url" content="http://localhost:4000/2019/02/resolve-unchecked-warning-in-pac4j.html" />
+<meta property="og:site_name" content="Mi’s Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-02-08T11:35:00+08:00" />
+<meta name="google-site-verification" content="c_dy3nviktjVLRn596isPsioYIJ-DJbwvi3a-IaPpUU" />
+<meta name="msvalidate.01" content="1F25C7FEE6EA0EA3DFB94AB5C17E3965" />
+<meta name="yandex-verification" content="bfcf98bfa420e600" />
+<meta name="baidu-site-verification" content="wyRKL4aXeh" />
+<script type="application/ld+json">
+{"headline":"Resolve unchecked warning in pac4j","dateModified":"2019-02-08T11:35:00+08:00","datePublished":"2019-02-08T11:35:00+08:00","url":"http://localhost:4000/2019/02/resolve-unchecked-warning-in-pac4j.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2019/02/resolve-unchecked-warning-in-pac4j.html"},"description":"In generic object calling, we need pass certain type(s) when we call some function or new some object. A generic object (from pac4j) maybe declares like below:","@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Mi's Blog" /></head><body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Mi&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/food/index.html">Food</a><a class="page-link" href="/code/index.html">Code</a><a class="page-link" href="/road/index.html">Road</a><a class="page-link" href="/note/index.html">Note</a><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Resolve unchecked warning in pac4j</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-02-08T11:35:00+08:00" itemprop="datePublished">Feb 8, 2019
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>In generic object calling, we need pass certain type(s) when we call some function or new some object. A generic object (from pac4j) maybe declares like below:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="n">org</span><span class="o">.</span><span class="na">pac4j</span><span class="o">.</span><span class="na">core</span><span class="o">.</span><span class="na">authorization</span><span class="o">.</span><span class="na">generator</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">org.pac4j.core.context.WebContext</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.pac4j.core.profile.CommonProfile</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">java.util.Arrays</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.Collection</span><span class="o">;</span>
+
+<span class="cm">/**
+ * Grant default roles and/or permissions to a user profile.
+ *
+ * @author Jerome Leleu
+ * @since 1.8.0
+ */</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">DefaultRolesPermissionsAuthorizationGenerator</span><span class="o">&lt;</span><span class="n">U</span> <span class="kd">extends</span> <span class="n">CommonProfile</span><span class="o">&gt;</span> <span class="kd">implements</span> <span class="n">AuthorizationGenerator</span><span class="o">&lt;</span><span class="n">U</span><span class="o">&gt;</span> <span class="o">{</span>
+
+    <span class="kd">private</span> <span class="kd">final</span> <span class="n">Collection</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">defaultRoles</span><span class="o">;</span>
+
+    <span class="kd">private</span> <span class="kd">final</span> <span class="n">Collection</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">defaultPermissions</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">DefaultRolesPermissionsAuthorizationGenerator</span><span class="o">(</span><span class="kd">final</span> <span class="n">Collection</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">defaultRoles</span><span class="o">,</span> <span class="kd">final</span> <span class="n">Collection</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">defaultPermissions</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">defaultRoles</span> <span class="o">=</span> <span class="n">defaultRoles</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">defaultPermissions</span> <span class="o">=</span> <span class="n">defaultPermissions</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="nf">DefaultRolesPermissionsAuthorizationGenerator</span><span class="o">(</span><span class="kd">final</span> <span class="n">String</span><span class="o">[]</span> <span class="n">defaultRoles</span><span class="o">,</span> <span class="kd">final</span> <span class="n">String</span><span class="o">[]</span> <span class="n">defaultPermissions</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">defaultRoles</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">this</span><span class="o">.</span><span class="na">defaultRoles</span> <span class="o">=</span> <span class="n">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="n">defaultRoles</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+            <span class="k">this</span><span class="o">.</span><span class="na">defaultRoles</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">defaultPermissions</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">this</span><span class="o">.</span><span class="na">defaultPermissions</span> <span class="o">=</span> <span class="n">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="n">defaultPermissions</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+            <span class="k">this</span><span class="o">.</span><span class="na">defaultPermissions</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">U</span> <span class="nf">generate</span><span class="o">(</span><span class="kd">final</span> <span class="n">WebContext</span> <span class="n">context</span><span class="o">,</span> <span class="kd">final</span> <span class="n">U</span> <span class="n">profile</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">defaultRoles</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">profile</span><span class="o">.</span><span class="na">addRoles</span><span class="o">(</span><span class="n">defaultRoles</span><span class="o">);</span>
+        <span class="o">}</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">defaultPermissions</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">profile</span><span class="o">.</span><span class="na">addPermissions</span><span class="o">(</span><span class="n">defaultPermissions</span><span class="o">);</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="n">profile</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>In this declaration, we find that the type parameter <code class="highlighter-rouge">U</code> is never used in this class.
+But we need to pass a certain type when we create a <code class="highlighter-rouge">DefaultRolesPermissionsAuthorizationGenerator</code> object too, otherwise we will get a <code class="highlighter-rouge">unchecked</code> warning when complie files. We should do it like below:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">final</span> <span class="n">Clients</span> <span class="n">clients</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Clients</span><span class="o">(</span><span class="n">headerClient</span><span class="o">);</span>
+<span class="n">clients</span><span class="o">.</span><span class="na">addAuthorizationGenerator</span><span class="o">(</span><span class="k">new</span> <span class="n">DefaultRolesPermissionsAuthorizationGenerator</span><span class="o">&lt;&gt;(</span>
+        <span class="n">Sets</span><span class="o">.</span><span class="na">newHashSet</span><span class="o">(</span><span class="s">"common"</span><span class="o">),</span>
+        <span class="n">Sets</span><span class="o">.</span><span class="na">newHashSet</span><span class="o">(</span><span class="s">"post./auth/v1/changepassword"</span><span class="o">,</span> <span class="s">"get./auth/v1/silentlogin/permissions"</span><span class="o">)</span>
+<span class="o">));</span>
+</code></pre></div></div>
+
+<p>Notice that we pass empty in <code class="highlighter-rouge">&lt;&gt;</code>, it means that the compiler can determine, or infer.</p>
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li><a href="https://stackoverflow.com/questions/8660202/what-does-mean-for-java-generics">What does &lt;&gt; mean for java generics?</a></li>
+  <li><a href="https://stackoverflow.com/questions/2693180/what-is-unchecked-cast-and-how-do-i-check-it">What is unchecked cast and how do I check it?</a></li>
+  <li><a href="http://maven.apache.org/plugins/maven-compiler-plugin/examples/pass-compiler-arguments.html">Pass Compiler Arguments in Maven</a></li>
+</ul>
+
+  </div><a class="u-url" href="/2019/02/resolve-unchecked-warning-in-pac4j.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Mi&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Mi&#39;s Blog</li><li><a class="u-email" href="mailto:miguoliang61620@gmail.com">miguoliang61620@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/miguoliang"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">miguoliang</span></a></li><li><a href="https://www.twitter.com/miguoliang"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">miguoliang</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>I dream to code for the future of the human being in Google or Tesla. I dream to travel to all the world wonder of Civilization VI in the real world. I dream to taste all delicious food around the world with my wife. I dream to write something helpful for others.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

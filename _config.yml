@@ -16,10 +16,9 @@
 title: Mi's Blog
 email: miguoliang61620@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I dream to code for the future of the human being in Google or Tesla.
-  I dream to travel to all the world wonder of Civilization VI in the real world.
-  I dream to taste all delicious food around the world with my wife.
-  I dream to write something helpful for others.
+  I love coding, and dream to be a top coder in the world. 
+  Foods and trips make my life colorful and hopeful.
+  I'd like to enjoy life with my family.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://miguoliang.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: miguoliang
@@ -33,24 +32,47 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-paginate-v2
+
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: '/page/:num/'
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
 header_pages:
   - food.md
   - code.md
   - road.md
   - note.md
   - about.md
+
+permalink: /:year/:month/:title.html
+
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: '/page/:num/'
+  title: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 
 webmaster_verifications:
   google: c_dy3nviktjVLRn596isPsioYIJ-DJbwvi3a-IaPpUU
