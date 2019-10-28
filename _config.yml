@@ -14,11 +14,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Mi's Blog
-email: nothingmi@muchencute.com
+email: miguoliang61620@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I'm a full stack developer with over 15 years experience. I want to share some 
-  useful tips, skills, and ideas here. All my share base on my practice and I 
-  hope they are so short and useful that save your time. 
+  I dream to code for the future of the human being in Google or Tesla.
+  I dream to travel to all the world wonder of Civilization VI in the real world.
+  I dream to taste all delicious food around the world with my wife.
+  I dream to write something helpful for others.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://miguoliang.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: miguoliang
@@ -45,11 +46,10 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 header_pages:
-  - seo.md
-  # - angular.md
-  - java.md
-  # - linux.md
-  - elasticsearch.md
+  - food.md
+  - code.md
+  - road.md
+  - note.md
   - about.md
 
 webmaster_verifications:

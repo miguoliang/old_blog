@@ -2,7 +2,7 @@
 layout: post
 title:  "Change and Add Remote URLs for a Local Existing Git Repository"
 date:   2019-10-25 19:22:27 +0800
-categories: git
+categories: code
 ---
 
 ![Change and Add Remote URLs for a Local Existing Git Repository](/assets/2019-10-25-change-add-remote-urls-git-repository/banner.jpg)

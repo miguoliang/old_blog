@@ -3,7 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: list
-title: Linux
-category: linux
-permalink: /linux/
+category: road
+title: Road
 ---

@@ -2,7 +2,7 @@
 layout: post
 title:  "Get the background color of a cell with solid pattern fill by POI"
 date:   2019-1-9 21:56:00 +0800
-categories: java poi
+categories: code
 ---
 
 1\. Add dependency in Maven

@@ -2,7 +2,7 @@
 layout: post
 title:  "Java Regex Tips: It is a whole word when alphadigits are connected with non-English characters"
 date:   2019-1-18 07:32:00 +0800
-categories: java
+categories: code
 ---
 A word that is combined non-English characters with alphadigits characters is seem as a whole word. So `\b` is no use on matching the alphadigits characters in the word.
 

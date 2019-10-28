@@ -2,7 +2,7 @@
 layout: post
 title:  "Server Side Rendering - Search Engine Optimization (SEO) Guide 2019 for Angular"
 date:   2019-10-25 19:31:00 +0800
-categories: seo
+categories: code
 ---
 
 ![Server Side Rendering - Search Engine Optimization (SEO) Guide 2019 for Angular](/assets/2019-10-25-server-side-rendering-seo-guide-for-angular/banner.jpg)

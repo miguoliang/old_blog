@@ -3,7 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: list
-title: Angular
-category: angular
-permalink: /angular/
+category: note
+title: Note
 ---

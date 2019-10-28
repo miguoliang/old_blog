@@ -2,7 +2,7 @@
 layout: post
 title:  "Elasticsearch regular expression tips"
 date:   2019-1-1 18:00:00 +0800
-categories: elasticsearch
+categories: code
 ---
 
 1. `\d` and `\w` are not supported in [regexp query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-regexp-query.html#regexp-syntax), so you have to use `[0-9]`, `[a-z]`, `[A-Z]`, or `[a-zA-Z]` instead.

@@ -2,7 +2,7 @@
 layout: post
 title:  "Resolve unchecked warning in pac4j"
 date:   2019-2-8 11:35:00 +0800
-categories: java
+categories: code
 ---
 
 In generic object calling, we need pass certain type(s) when we call some function or new some object. A generic object (from pac4j) maybe declares like below:

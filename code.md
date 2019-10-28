@@ -3,7 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: list
-title: Java
-category: java
-permalink: /java/
+category: code
+title: Code
 ---
