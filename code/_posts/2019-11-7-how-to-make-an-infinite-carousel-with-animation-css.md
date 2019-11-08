@@ -108,7 +108,7 @@ The next, let us new a css file to control the cascading styles for these HTML e
 
 The key point of this css file is the `position` property settings. Because the carousel places all pages in a same area, so these pages are cascading in fact. It seems like this:
 
-![the Arrangement of Pages](assets/2019-11-7-how-to-make-an-infinite-carousel-in-jekyll/carousel.png)
+![the Arrangement of Pages](/assets/2019-11-7-how-to-make-an-infinite-carousel-in-jekyll/carousel.png)
 
 You can found that, all pages have the same x and y coordinates, and the same width and height, so these settings can make sure the current page covers the whole area so that other pages disappear.
 
