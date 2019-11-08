@@ -1,10 +1,12 @@
 ---
 layout: post
 title:  "How to do when PHP works slowly"
-date:   2019-10-26 19:31:00 +0800
+date:   2019-11-06 19:31:00 +0800
 categories:
     - code
 ---
+
+![How to do when PHP works slowly](/assets/2019-11-6-how-to-do-when-php-works-slowly/banner.jpg)
 
 ## Introduction
 
