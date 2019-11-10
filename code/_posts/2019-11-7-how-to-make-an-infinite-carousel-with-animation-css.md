@@ -199,4 +199,4 @@ You can find the full codes in my Github. Click [here](https://github.com/miguol
 
 ## Conclusion
 
-A Carousel is widely used because it can save much space on the page. And the animation can make the visitor focus on it quickly. The carousel you built in this article is the simplest, and you can add your features to it, and you can change the arrangement of the page.
+People use a carousel to present headlines on their homepage. And the animation can make the visitor focus on it quickly. The carousel you built in this article is the simplest, and you can add your features to it, and you can change the arrangement of the page.
