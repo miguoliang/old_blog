@@ -12,17 +12,17 @@ categories:
 
 This article talks about how to build a productive directory structure to manage posts and pages smoothly and productively.
 
-### Brief introduction to Jekyll
+### A Brief Introduction to Jekyll
 
 Jekyll is a widely used static website generator, and it supports Markdown and HTML by default. So developers use Jekyll to build their blogs and project official website.
 
 On the other hand, Github Pages is a free service that supports Jekyll deployment automatically.
 
-Jekyll community is active, and there are more and more plugins and themes can be used. So Jekyll is really a good choice for developers to maintain and develop a propersal website.
+Jekyll community is active, and there are more and more plugins and themes to make your website compelling and beautiful. So Jekyll is an excellent choice for developers to maintain and develop a proposal website.
 
 ### Why we need to talk about this topic in Jekyll
 
-Because Jekyll is simple and flexible, and without backend, database and workbench user interface. So how to manage your hundreds of articles and pages is an important topic for users who want to work with Jekyll smoothly and productively.
+Because Jekyll is flexible and straightforward, and without backend, database and workbench user interface. So how to manage your hundreds of articles and pages is an essential topic for users who want to work with Jekyll smoothly and productively.
 
 ## Comprehend the Default Directory Structure
 
@@ -53,4 +53,4 @@ The final directory structure looks like this:
 
 ## Conclusion
 
-Put pictures and videos in a isolated folder can help you find and update them easily in the future. To keep the name of folder same as the corresponding post file can shrink your searching regions.
+Put pictures, and videos in a separate folder can help you find and update them easily in the future. To keep the name of the folder the same as the corresponding post file can shrink your searching regions.
