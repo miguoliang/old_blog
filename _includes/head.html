@@ -5,7 +5,9 @@
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {%- feed_meta -%}
-  {%- include google-analytics.html -%}
-  {%- include google-adsense.html -%}
-  {%- include baidu-autopush.html -%}
+  {%- if jekyll.environment == 'production' -%}
+    {%- include google-analytics.html -%}
+    {%- include google-adsense.html -%}
+    {%- include baidu-autopush.html -%}
+  {%- endif -%}
 </head>
