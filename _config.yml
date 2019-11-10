@@ -21,7 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Foods and trips make my life colorful and hopeful.
   I'd like to enjoy life with my family.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://miguoliang.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.miguoliang.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: miguoliang
 github_username:  miguoliang
 google_analytics: UA-136531912-1
