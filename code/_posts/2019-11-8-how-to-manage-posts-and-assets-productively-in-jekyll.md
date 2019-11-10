@@ -28,7 +28,7 @@ Because Jekyll is flexible and straightforward, and without backend, database an
 
 When we create a new website by the command `jekyll new demo-website`, several directories and files are created on your disk, and directory structure looks like this:
 
-![Default Directory Structure](/assets/2019-11-8-how-to-build-a-productive-directory-structure-in-jekyll/default-directory-structure.jpg)
+![Default Directory Structure](/assets/2019-11-8-how-to-manage-posts-and-assets-productively-in-jekyll/default-directory-structure.jpg)
 
 - *_posts* storages your articles.
 -*_config.yml* is the global configuration file of Jekyll.
@@ -49,7 +49,7 @@ Create a new markdown file in the `_posts` folder, and then create a new folder 
 
 The final directory structure looks like this:
 
-![Final Directory Structure](/assets/2019-11-8-how-to-manage-posts-and-assets-productively-in-jekyll/tree.jpg)
+![Final Directory Structure](/assets/2019-11-8-how-to-manage-posts-and-assets-productively-in-jekyll/final-directory-structure.jpg)
 
 ## Conclusion
 
