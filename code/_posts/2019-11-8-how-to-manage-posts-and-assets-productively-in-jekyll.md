@@ -49,7 +49,7 @@ Create a new markdown file in the `_posts` folder, and then create a new folder 
 
 The final directory structure looks like this:
 
-![Final Directory Structure](/assets/2019-11-8-how-to-manage-posts-and-assets-productively-in-jekyll/final-directory-structure.jpg)
+![Final Directory Structure](/assets/2019-11-8-how-to-manage-posts-and-assets-productively-in-jekyll/tree.jpg)
 
 ## Conclusion
 
