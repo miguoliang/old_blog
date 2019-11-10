@@ -10,15 +10,15 @@ categories:
 
 ## Introduction
 
-A carousel has almost been a neccessary widget on the website homepage, and it always be placed on the top, and it always be big enought. A carousel is used to present the most important topics at the best position of the page.
+A carousel has almost been a necessary widget on the website homepage, and it always is placed on the top, and it still is big enough. A carousel is used to present the essential topics in the best position of the page.
 
-Bootstrap has a carousel control, but you must import many files for this widget, so it must not be a good choice for simple site. And Bootstrap may be confict with the existing CSS framework, because Bootstrap will reboot tags default styles to support its own logics.
+Bootstrap has a carousel control, but you must import many files for this widget, so it must not be the right choice for a simple site. Bootstrap may be a conflict with the existing CSS framework because Bootstrap will reboot tags default styles to support its logic.
 
-So writing a simple and useful enough carousel is good for some scensories, that is why I write this article.
+So writing a useful and straightforward enough carousel is suitable for some cases, that is why I write this article.
 
-In this article, you will be clear that how to make a simplest carousel with pure javascript, and how to control the animation with animation.css.
+In this article, you will be apparent how to make the simplest carousel with pure javascript and how to control the animation with animation.css.
 
-You will build a demo website by Jekyll, because you can debug your static website easily.
+You will build a demo website by Jekyll because you can debug your static website easily.
 
 ## What is Animation.css
 
@@ -28,9 +28,7 @@ animate.css is a bunch of cool, fun, and cross-browser animations for you to use
 
 Jekyll is a famous and popular static website generator. Github Pages supports Jekyll very well so that Jekyll has been used widely than before.
 
-A developer can write a website like writing a document with Jekyll. Markdown and HTML are supported in Jekyll.
-
-It's so easy in fact, you will love it, I promise.
+Developers can write a website like writing a document with Jekyll. Jekyll supports markdown and HTML to create posts and pages. It's so easy you will love it, I promise.
 
 ## Create a new Jekyll website
 
@@ -201,4 +199,4 @@ You can find the full codes in my Github. Click [here](https://github.com/miguol
 
 ## Conclusion
 
-A Carousel is widely used, because it can save much space of the page. And the animation can make the visitor focus on it easily. This is a simplest carousel, and you can add your own features to it, and you can change the arrangement of page.
+A Carousel is widely used because it can save much space on the page. And the animation can make the visitor focus on it quickly. The carousel you built in this article is the simplest, and you can add your features to it, and you can change the arrangement of the page.
