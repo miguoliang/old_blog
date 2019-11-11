@@ -2,7 +2,7 @@
 layout: post
 title:  "How to do when PHP works slowly"
 date:   2019-11-06 19:31:00 +0800
-descriptions: >-
+description: >-
     Many reasons can make PHP working slowly. And how to find the reason you are facing is essential. This article helps you find and fix it out, step by step.
 categories:
     - code
