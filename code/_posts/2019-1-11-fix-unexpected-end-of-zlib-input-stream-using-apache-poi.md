@@ -2,11 +2,13 @@
 layout: post
 title:  "Fix Unexpected end of ZLIB input stream using Apache POI"
 date:   2019-1-11 16:53:00 +0800
+description: Sometimes, you could get an zlib exception when you operate on an Excel file with POI, this article tells you how to fix this issue.
+image: /assets/2019-1-11-fix-unexpected-end-of-zlib-input-stream-using-apache-poi/banner.jpg
 categories:
     - code
 ---
 
-Pretty sure the problem is you overwriting the file. Try to save to a different path. If you still want to overwrite the file, save to something else, delete the original, then rename the file you wrote into place:
+Pretty sure the problem is you overwriting the file. Try to save on a different path. If you still want to overwrite the file, save to something else, delete the original, then rename the file you wrote into place:
 
 ```java
     String tempFilename = createTempFile(template);

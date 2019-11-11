@@ -2,11 +2,13 @@
 layout: post
 title:  "Resolve unchecked warning in pac4j"
 date:   2019-2-8 11:35:00 +0800
+description: I met a generic type warning when I use DefaultRolesPermissionsAuthorizationGenerator in pac4j. This article tells you how to fix it.
+image: /assets/2019-2-8-resolve-unchecked-warning-in-pac4j/banner.jpg
 categories:
     - code
 ---
 
-In generic object calling, we need pass certain type(s) when we call some function or new some object. A generic object (from pac4j) maybe declares like below:
+In generic object calling, we need to pass specific type(s) when we call some function or new some object. A generic object (from pac4j) maybe declares like below:
 
 ```java
 package org.pac4j.core.authorization.generator;
