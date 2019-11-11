@@ -5,6 +5,8 @@
 layout: home
 title: Code
 permalink: /code/
+description: >-
+    I like coding and live on it. I record and share skills and thinkings here.
 pagination:
     enabled: true
     category: code

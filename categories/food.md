@@ -5,6 +5,8 @@
 layout: home
 title: Food
 permalink: /food/
+description: >-
+    Both my wife and me like delicious foods, so I share our favorite foods here with you.
 pagination:
     enabled: true
     category: food

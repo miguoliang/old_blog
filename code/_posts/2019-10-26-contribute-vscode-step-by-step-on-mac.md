@@ -2,17 +2,19 @@
 layout: post
 title:  "Contribute Visual Studio Code (VSCode) Step by Step on macOS"
 date:   2019-10-26 19:31:00 +0800
+description: >-
+    This article is a quick guide for a developer who wants to build the source code of Visual Studio Code for the first time.
 categories:
     - code
 ---
 
 ![Contribute Visual Studio Code (VSCode) Step by Step on macOS](/assets/2019-10-26-contribute-vscode-step-by-step-on-mac/banner.jpg)
 
-This article is a quick guide for a developer who contribute the Visual Studio Code (VSCode) at the first time. So far as I know, contribute a famous open source project is not so easy as the official Contribute Guide said, because the official contribute guide assumes that readers should be familiar with relevant tools and work on a perfect environment, but it's not true for the new. And that's why I write this article, I hope everyone could continue their research smoothly. Here we go!
+This article is a quick guide for a developer who wants to build the source code of Visual Studio Code for the first time. So far as I know, to contribute a great open source project is not so easy as the official Contribute Guide said because the official guide assumes that readers should be familiar with relevant tools and work in a perfect environment. Still, it's not right for the new. And that's why I write this article, and I hope everyone could continue their research smoothly. Here we go!
 
 ## Step 0. Install Homebrew
 
-Homebrew is a famous pacakge manager for macOS. Mostly, it is the easiest way to install packages we need. Paste the script in a macOS Terminal prompt to install Homebrew.
+Homebrew is a famous pacakge manager for macOS. Mostly, and it is the easiest way to install packages we need. Paste the script in a macOS Terminal prompt to install Homebrew.
 
 ```shell
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"

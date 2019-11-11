@@ -5,6 +5,8 @@
 layout: home
 title: Note
 permalink: /note/
+description: >-
+    The unexamined life is not worth living. -- Socrates
 pagination:
     enabled: true
     category: note

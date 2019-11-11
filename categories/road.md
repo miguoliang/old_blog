@@ -5,6 +5,8 @@
 layout: home
 title: Road
 permalink: /road/
+description: >-
+    Both my wife and me like travelling, so I share our footprints here with you.
 pagination:
     enabled: true
     category: road

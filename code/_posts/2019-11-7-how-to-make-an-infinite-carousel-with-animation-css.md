@@ -2,6 +2,8 @@
 layout: post
 title:  "How to Make an Infinite Carousel with Animation.css"
 date:   2019-11-07 19:31:00 +0800
+description: >-
+  A carousel has almost been a necessary widget on the website homepage, and it always is placed on the top, and it still is big enough. A carousel is used to present the essential topics in the best position of the page. In this article, you will be apparent how to make the simplest carousel with pure javascript and how to control the animation with animation.css.
 categories:
     - code
 ---
