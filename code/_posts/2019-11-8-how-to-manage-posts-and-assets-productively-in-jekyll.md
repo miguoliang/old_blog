@@ -4,11 +4,10 @@ title:  "How to Manage Posts and Assets Productively in Jekyll"
 date:   2019-11-08 19:31:00 +0800
 description: >-
     This article talks about how to build a productive directory structure to manage posts and pages smoothly and productively.
+image: /assets/2019-11-8-how-to-manage-posts-and-assets-productively-in-jekyll/banner.jpg
 categories:
     - code
 ---
-
-![How to Manage Posts and Assets Productively in Jekyll](/assets/2019-11-8-how-to-manage-posts-and-assets-productively-in-jekyll/banner.jpg)
 
 ## Introduction
 

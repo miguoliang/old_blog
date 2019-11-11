@@ -4,11 +4,10 @@ title:  "How to Make an Infinite Carousel with Animation.css"
 date:   2019-11-07 19:31:00 +0800
 description: >-
   A carousel has almost been a necessary widget on the website homepage, and it always is placed on the top, and it still is big enough. A carousel is used to present the essential topics in the best position of the page. In this article, you will be apparent how to make the simplest carousel with pure javascript and how to control the animation with animation.css.
+image: /assets/2019-11-7-how-to-make-an-infinite-carousel-in-jekyll/banner.jpg
 categories:
     - code
 ---
-
-![How to Make an Infinite Carousel in Jekyll](/assets/2019-11-7-how-to-make-an-infinite-carousel-in-jekyll/banner.jpg)
 
 ## Introduction
 

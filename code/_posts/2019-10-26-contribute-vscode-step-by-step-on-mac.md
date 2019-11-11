@@ -1,14 +1,12 @@
 ---
 layout: post
-title:  "Contribute Visual Studio Code (VSCode) Step by Step on macOS"
+title:  "Contribute VSCode Step by Step on macOS"
 date:   2019-10-26 19:31:00 +0800
-description: >-
-    This article is a quick guide for a developer who wants to build the source code of Visual Studio Code for the first time.
+description: This article is a quick guide for a developer who wants to build the source code of Visual Studio Code for the first time.
+image: /assets/2019-10-26-contribute-vscode-step-by-step-on-mac/banner.jpg
 categories:
     - code
 ---
-
-![Contribute Visual Studio Code (VSCode) Step by Step on macOS](/assets/2019-10-26-contribute-vscode-step-by-step-on-mac/banner.jpg)
 
 This article is a quick guide for a developer who wants to build the source code of Visual Studio Code for the first time. So far as I know, to contribute a great open source project is not so easy as the official Contribute Guide said because the official guide assumes that readers should be familiar with relevant tools and work in a perfect environment. Still, it's not right for the new. And that's why I write this article, and I hope everyone could continue their research smoothly. Here we go!
 

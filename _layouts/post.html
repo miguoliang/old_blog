@@ -18,6 +18,10 @@ layout: default
       {%- include social-buttons.html -%}</p>
   </header>
 
+  {%- if page.image -%}
+  <img class="post-image" src="{{ page.image | relative_url }}">
+  {%- endif -%}
+
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
