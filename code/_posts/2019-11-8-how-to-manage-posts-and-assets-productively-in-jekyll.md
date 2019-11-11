@@ -31,13 +31,13 @@ When we create a new website by the command `jekyll new demo-website`, several d
 ![Default Directory Structure](/assets/2019-11-8-how-to-manage-posts-and-assets-productively-in-jekyll/default-directory-structure.jpg)
 
 - *_posts* storages your articles.
--*_config.yml* is the global configuration file of Jekyll.
--*.gitignore* controls which directories or files should be out of version control in your git repository.
--*404.html* is the 404 page, which is default page when the URL is not found.
--*about.md* is the About page of your website.
--*Gemfile* is used for describing gem dependencies for Ruby programs.
--*Gemfile.lock* specifies exact versions of the third-party code you depend on in your Gemfile would not provide the same guarantee, because gems usually declare a range of versions for their dependencies.
--*index.md* is the Homepage of your website, and it is the list of your posts by default.
+- *_config.yml* is the global configuration file of Jekyll.
+- *.gitignore* controls which directories or files should be out of version control in your git repository.
+- *404.html* is the 404 page, which is default page when the URL is not found.
+- *about.md* is the About page of your website.
+- *Gemfile* is used for describing gem dependencies for Ruby programs.
+- *Gemfile.lock* specifies exact versions of the third-party code you depend on in your Gemfile would not provide the same guarantee, because gems usually declare a range of versions for their dependencies.
+- *index.md* is the Homepage of your website, and it is the list of your posts by default.
 
 ## Create the Assets Folder
 
