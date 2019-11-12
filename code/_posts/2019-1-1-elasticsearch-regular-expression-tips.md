@@ -2,6 +2,8 @@
 layout: post
 title:  "Elasticsearch regular expression tips"
 date:   2019-1-1 18:00:00 +0800
+image: /assets/2019-1-1-elasticsearch-regular-expression-tips/banner.jpg
+description: This article tells you some 
 categories:
     - code
 ---

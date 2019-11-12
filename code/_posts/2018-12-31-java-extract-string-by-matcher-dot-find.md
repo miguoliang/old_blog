@@ -2,6 +2,7 @@
 layout: post
 title:  "Java: Extract string by Matcher.find()"
 date:   2018-12-31 19:22:27 +0800
+image: /assets/2018-12-31-java-extract-string-by-matcher-dot-find/banner.jpg
 categories:
     - code
 ---

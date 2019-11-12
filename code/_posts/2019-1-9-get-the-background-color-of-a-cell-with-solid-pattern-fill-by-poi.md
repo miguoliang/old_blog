@@ -2,6 +2,8 @@
 layout: post
 title:  "Get the background color of a cell with solid pattern fill by POI"
 date:   2019-1-9 21:56:00 +0800
+description: This article provides a way to background color of a cell with solid pattern fill by POI.
+image: /assets/2019-1-9-get-the-background-color-of-a-cell-with-solid-pattern-fill-by-poi/banner.jpg
 categories:
     - code
 ---

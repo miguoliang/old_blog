@@ -2,6 +2,7 @@
 layout: post
 title:  "How to import big result set to Elasticsearch by Logstash JDBC input plugin"
 date:   2019-1-7 16:00:00 +0800
+image: /assets/2019-1-7-how-to-import-big-result-set-to-elasticsearch-by-logstash-jdbc-input-plugin/banner.png
 categories:
     - code
 ---
