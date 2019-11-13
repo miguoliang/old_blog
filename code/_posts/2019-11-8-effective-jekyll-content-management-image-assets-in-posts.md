@@ -35,7 +35,7 @@ Jekyll is a leading solution to build static websites. You write blog posts as t
 
 The final screenshot on your website should like this:
 
-![Final Screenshot](/assets/2019-11-8-image-assets-in-posts/hello-world.jpg)
+![Final Screenshot](/assets/2019-11-8-effective-jekyll-content-management-image-assets-in-posts/final-screenshot.jpg)
 
 But the most important result of the solution is the directory structure of your website, and it looks like this:
 
