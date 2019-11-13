@@ -12,7 +12,7 @@ categories:
 
 Jekyll is a leading solution to build static websites. You write blog posts as text files, and store image assets in the `assets` folder. How to effective manage a large number of posts and their images is a critical problem. I will show you the right solution in this article.
 
-## From A to Z
+## Details of the Solution
 
 1. Create a new website by the command `jekyll new effective-jekyll`, and a basic content management system is just built. This content management system is based on file system, not database, so you need to manage your content like files.
 2. Create the assets folder to store images by the command `mkdir assets` in the root directory of the website.
