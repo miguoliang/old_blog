@@ -45,4 +45,4 @@ But the most important result of the solution is the directory structure of your
 
 ## Conclusion
 
-Each article has a corresponding image folder under the assets folder. This solution make the image assets management effective and clear. When you want to change images in some article, you can find them quickly. No matter what how many files in your content management system， you won't confuse posts and their images.
+Each article has a corresponding image folder under the assets folder. This solution make the image assets management effective and clear. When you want to change images in some article, you can find them quickly. No matter what how many files in your content management system, you won't confuse posts and their images.
