@@ -41,6 +41,8 @@ But the most important result of the solution is the directory structure of your
 
 ![Final Directory Structure](/assets/2019-11-8-effective-jekyll-content-management-image-assets-in-posts/final-directory-structure.jpg)
 
+*You can download the source code of the demo from my GitHub. <https://github.com/miguoliang/effective-jekyll.git>*
+
 ## Conclusion
 
 Each article has a corresponding image folder under the assets folder. This solution make the image assets management effective and clear. When you want to change images in some article, you can find them quickly. No matter what how many files in your content management system， you won't confuse posts and their images.
