@@ -38,4 +38,3 @@ But what to do if you want to resize or crop a GIF animation file you just recor
 What you need to do is just upload the GIF animation file you just recorded by LICEcap, then edit it, preview and download the final GIF to your disk.
 
 ![ezgif](/assets/2019-11-16-tips-gif-animation-screen-recorder-licecap-mac-os/tips-2.jpg)
-
