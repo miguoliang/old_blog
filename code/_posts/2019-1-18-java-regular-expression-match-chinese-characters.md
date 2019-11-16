@@ -3,7 +3,7 @@ layout: post
 title:  "Java Regular Expression: How To Match Chinese Characters"
 date:   2019-1-18 07:32:00 +0800
 description: How to match Chinese characters using regular expression in Java.
-image: /assets/java-regular-expression-match-chinese-characters/banner.jpg
+image: /assets/2019-1-18-java-regular-expression-match-chinese-characters/banner.jpg
 categories:
     - code
 ---
