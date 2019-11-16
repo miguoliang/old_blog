@@ -8,6 +8,15 @@
   {%- include header.html -%}
 
   <main class="page-content" aria-label="Content">
+
+    <div class="wrapper">
+      <div class="search">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input type="text" id="search-input" placeholder="Search posts by keyword ...">
+        <ul id="results-container"></ul>
+      </div>
+    </div>
+
     <div class="wrapper">
       {{ content }}
     </div>

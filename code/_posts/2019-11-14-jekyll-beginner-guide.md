@@ -202,7 +202,7 @@ If you are a developer, and you want to share codes on your website, the code hi
 
 Suppose you want to share Java codes in the post you just created.
 
-{% highlight markdown %}
+{% highlight text %}
 
 ```java
 public class Product {

@@ -45,9 +45,9 @@ exclude:
   - vendor/ruby/
 
 header_pages:
-  - food.md
+  # - food.md
   - code.md
-  - road.md
+  # - road.md
   - note.md
   - about.md
 

@@ -11,7 +11,7 @@ $base-line-height: 1.5 !default;
 $spacing-unit:     30px !default;
 
 $text-color:       #111 !default;
-$background-color: #f6f6f6 !default;
+$background-color: #fdfdfd !default;
 $brand-color:      #2a7ae2 !default;
 
 $grey-color:       #828282 !default;
@@ -43,6 +43,8 @@ $on-laptop:        800px !default;
   font-size: $base-font-size * $ratio;
 }
 
+$border-radius: .5rem;
+
 // Import partials.
 @import
   "minima/base",
@@ -52,3 +54,4 @@ $on-laptop:        800px !default;
 
 @import "custom";
 @import "social-buttons";
+@import "search";
