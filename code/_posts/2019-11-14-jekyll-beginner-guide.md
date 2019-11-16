@@ -29,7 +29,7 @@ The purpose of writing this guide is to enable the reader to quickly learn the b
 
 ## Introduction
 
-Jekyll is an excellent and accessible static website generator. People use Jekyll to create their websites and blogs. More and more static web hosting services have appeared on the Internet, such as Github Pages, AWS Amplify, and so on.
+Jekyll is an excellent and accessible static website builder. People use Jekyll to create their websites and blogs. More and more static web hosting services have appeared on the Internet, such as Github Pages, AWS Amplify, and so on.
 
 Jekyll saves blog posts as text files. Therefore Jekyll is a file system based content management system. Jekyll does not have a database, a backend application, and a dashboard user interface. What you need to manage your content is only the text editor you like the most.
 
@@ -151,7 +151,7 @@ The meaning of each file or directory is:
 
 ## Write Your First Post
 
-Jekyll is not only a static website generator but also a content management system. Therefore, we need to be familiar with the workflow of writing posts.
+Jekyll is not only a static website builder but also a content management system. Therefore, we need to be familiar with the workflow of writing posts.
 
 ### Create a Text Only Post
 
