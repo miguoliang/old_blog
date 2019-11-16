@@ -122,9 +122,9 @@ Note: You must have [Windows Subsystem for Linux](https://docs.microsoft.com/zh-
 
 ## Start a new website
 
-Run the command `jekyll new effective-jekyll`, and a folder named `effective-jekyll` has been create in your current directory. The `effective-jekyll` folder is called the root directory of the website. You will see it many times in my blog.
+Run the command `jekyll new jekyll-beginner-guide`, and a folder named `jekyll-beginner-guide` has been create in your current directory. The `jekyll-beginner-guide` folder is called the root directory of the website. You will see it many times in my blog.
 
-Enter the root directory of the website you just created by the command `cd effective-jekyll`, and list all files and folders of the website project.
+Enter the root directory of the website you just created by the command `cd jekyll-beginner-guide`, and list all files and folders of the website project.
 
 ```shell
 $ ls -l
@@ -268,12 +268,17 @@ Pages are different with posts in a website. Posts are for timely content. They 
 
     ```markdown
     E-mail: miguoliang@hotmail.com
+
     Twitter: miguoliang
     ```
 
     **Notes that**
 
     *Generally, each page should have its unique static link.*
+
+    *A "Contact Me" link will appears on the top right of the page when you run the website locally.*
+
+    ![Contact Me Entrance](/assets/2019-11-14-jekyll-beginner-guide/contact-us-entrance.jpg)
 
 ## Run and debug your website locally
 
@@ -283,18 +288,40 @@ Open the url `http://localhost:4000/2019/11/14/jekyll-beginner-guide` in your br
 
 When you save your changes on posts or pages, Jekyll recompiles your website instantly. Refresh the page in browser to check latest changes.
 
-## Version control of your website
+![Final Result](/assets/2019-11-14-jekyll-beginner-guide/post-entrance.jpg)
 
-A local git repository has been initialized by Jekyll, what you need to do is only push the local repository to your remote git repository.
+## Version control of your website
 
 Suppose you created an empty remote repository on Github.
 
-```shell
-git remote add origin remote <Repository URL> # Sets the new remote
-git push -u origin master
-```
+1. Initialize an empty repository in the root of your website.
+
+    ```shell
+    git init
+    ```
+
+2. Commit all changes to the local repository.
+
+    ```shell
+    git add .gitignore # .gitignore is ommited by default because it is a hidden file, so you need add it to changes mannually.
+    git commit -m'init' -a
+    ```
+
+3. Add Remote URL to the local repository.
+
+    ```shell
+    git remote add origin remote <Repository URL> # Sets the new remote
+    ```
+
+4. Push to the remote.
+
+    ```shell
+    git push -u origin master
+    ```
 
 *Before push the local repository to the remote, you need to be sure that changes have been committed to your local repository.*
+
+*You can download the source code of the demo from my GitHub. <https://github.com/miguoliang/jekyll-beginner-guide.git>*
 
 ## Conclusion
 
