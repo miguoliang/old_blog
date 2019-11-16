@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Get the background color of a cell with solid pattern fill by POI"
+title:  "Use Apache POI to Get the Background Color of the Cell in Sheets in XLSX Workbooks"
 date:   2019-1-9 21:56:00 +0800
 description: This article provides a way to background color of a cell with solid pattern fill by POI.
-image: /assets/2019-1-9-get-the-background-color-of-a-cell-with-solid-pattern-fill-by-poi/banner.jpg
+image: /assets/2019-1-9-apache-poi-get-cell-background-color-sheets-xlsx-workbooks/banner.jpg
 categories:
     - code
 ---

@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Change & Add Remote URLs for a Local Git Repository"
+title:  "Git: Add / Change Remote URL"
 date:   2019-10-25 19:22:27 +0800
-description: This article talks about how to change/add remote URLs for a local existing git repository. It is instrumental and influential in managing our code on complex source control requirements.
-image: /assets/2019-10-25-change-add-remote-urls-git-repository/banner.jpg
+description: How to change/add remote URLs for a local existing git repository. It is instrumental and influential in managing our code on complex source control requirements.
+image: /assets/2019-10-25-git-add-change-remote-url/banner.jpg
 categories:
     - code
 ---

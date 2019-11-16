@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "How to do when PHP works slowly"
+title:  "How to fix PHP Performance Issues"
 date:   2019-11-06 19:31:00 +0800
-description: >-
-    Many reasons can make PHP working slowly. And how to find the reason you are facing is essential. This article helps you find and fix it out, step by step.
-image: /assets/2019-11-6-how-to-do-when-php-works-slowly/banner.jpg
+description: How to fix PHP Performance Issues.
+image: /assets/2019-11-6-php-performance-issues/banner.jpg
 categories:
     - code
 ---

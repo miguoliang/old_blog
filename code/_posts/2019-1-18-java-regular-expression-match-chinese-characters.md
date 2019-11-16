@@ -1,13 +1,14 @@
 ---
 layout: post
-title:  "Match a whole word when alpha digits connect with non-English characters"
+title:  "Java Regular Expression: How To Match Chinese Characters"
 date:   2019-1-18 07:32:00 +0800
-description: A word that is combined non-English characters with alpha digits characters seems like a whole word. So `\b` is no use on matching the alpha digits characters in the word.
-image: /assets/2019-1-18-java-regex-tips-mixing-alpha-digits-and-non-english-characters/banner.jpg
+description: How to match Chinese characters using regular expression in Java.
+image: /assets/java-regular-expression-match-chinese-characters/banner.jpg
 categories:
     - code
 ---
-A word that is combined non-English characters with alpha digits characters seems like a whole word. So `\b` is no use on matching the alpha digits characters in the word.
+
+A word that is combined Chinese characters with alpha digits characters seems like a whole word. So `\b` is no use on matching the alpha digits characters in the word.
 
 ```java
     // your code goes here

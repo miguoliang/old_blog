@@ -2,8 +2,8 @@
 layout: post
 title:  "Fix Unexpected end of ZLIB input stream using Apache POI"
 date:   2019-1-11 16:53:00 +0800
-description: Sometimes, you could get an zlib exception when you operate on an Excel file with POI, this article tells you how to fix this issue.
-image: /assets/2019-1-11-fix-unexpected-end-of-zlib-input-stream-using-apache-poi/banner.jpg
+description: Fix Unexpected end of ZLIB input stream using Apache POI
+image: /assets/2019-1-11-apache-poi-unexpected-end-of-zlib-input-stream-exception/banner.jpg
 categories:
     - code
 ---

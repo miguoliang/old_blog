@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Server Side Rendering - SEO Guide 2019 for Angular"
+title:  "Angular SEO using Server Side Rendering (SSR)"
 date:   2019-10-25 19:31:00 +0800
-description: This article talks about differences between Server-Side Rendering and Client-Side Rendering, and Why SSR is essential to SEO.
-image: /assets/2019-10-25-server-side-rendering-seo-guide-for-angular/banner.jpg
+description: Angular SEO using Server Side Rendering (SSR).
+image: /assets/2019-10-25-angular-seo-server-side-rendering-ssr/banner.jpg
 categories:
     - code
 ---

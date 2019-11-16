@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Elasticsearch regular expression tips"
+title:  "3 Tips to Elasticsearch Regular Expression"
 date:   2019-1-1 18:00:00 +0800
-image: /assets/2019-1-1-elasticsearch-regular-expression-tips/banner.jpg
-description: This article tells you some 
+image: /assets/2019-1-1-tips-to-elasticsearch-regular-expression/banner.jpg
+description: 3 Tips to Elasticsearch Regular Expression
 categories:
     - code
 ---

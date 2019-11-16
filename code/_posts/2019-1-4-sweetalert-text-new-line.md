@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Sweetalert2: newline in text"
+title:  "Sweetalert 2: new line in text"
 date:   2019-1-4 18:00:00 +0800
 description: This article helps you make multiple lines in sweetalert2.
-image: /assets/2019-1-4-sweetalert2-text-newline/banner.jpg
+image: /assets/2019-1-4-sweetalert-text-new-line/banner.jpg
 categories:
     - code
 ---
