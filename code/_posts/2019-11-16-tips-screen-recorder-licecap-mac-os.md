@@ -3,7 +3,7 @@ layout: post
 title: Tips to GIF Animation Screen Recorder LICEcap on macOS
 description: Tips to GIF Animation Screen Recorder LICEcap on macOS
 date: 2019-11-16 00:00:00 +08:00
-image: /assets/2019-11-16-tips-gif-animation-screen-recorder-licecap-mac-os/banner.png
+image: /assets/2019-11-16-tips-gif-animation-screen-recorder-licecap-mac-os/banner.jpg
 ---
 
 ## Introduction
