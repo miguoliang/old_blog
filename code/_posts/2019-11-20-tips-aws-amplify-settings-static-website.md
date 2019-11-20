@@ -12,7 +12,7 @@ categories:
 
 AWS Amplify is an easy to use and powerful app hosting solution. AWS Amplify defines a workflow to deployment integration with flexible and automatic resource management.
 
-*For a quick learn from a tiny project by reading [Effective Jekyll: Hosting Websites on AWS Amplify](/effective-jekyll-hosting-websites-on-github-pages).*
+*For a quick learn from a tiny project by reading [Effective Jekyll: Hosting Websites on AWS Amplify](/effective-jekyll-hosting-websites-on-aws-amplify).*
 
 *For a quick compare Github Pages and AWS Amplify on hosting static webistes by reading [Effective Jekyll: AWS Amplify vs Github Pages](/effective-jekyll-aws-amplify-vs-github-pages).*
 
