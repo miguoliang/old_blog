@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Effective Jekyll: Hosting Websites on AWS Amplify"
-description: "Effective Jekyll: Hosting Websites on AWS Amplify"
+description: This article is a guide help you host your static website on AWS Amplify
 date: 2019-11-13 00:00:00 +08:00
 image: /assets/2019-11-13-effective-jekyll-hosting-websites-on-aws-amplify/banner.jpg
 categories:
@@ -60,4 +60,45 @@ People can custom their AWS Amplify in the AWS Amplify Console. Settings of AWS 
 
         ![Review and deploy your website](/assets/2019-11-13-effective-jekyll-hosting-websites-on-aws-amplify/step-3-5.jpg)
 
+4. Verify your website online.
+
+    For now, AWS Amplify will compile and deploy your website to the remote. People can trace the workflow by the following guide.
+
+    1. Click your app's name on the left navigation.
+
+        ![Click your app's name](/assets/2019-11-13-effective-jekyll-hosting-websites-on-aws-amplify/step-4-1.jpg)
+
+    2. Get the progress of the latest job.
+
+        ![Get the progress of the latest job](/assets/2019-11-13-effective-jekyll-hosting-websites-on-aws-amplify/step-4-2.jpg)
+
+        **Notes here**
+
+        *There are 4 steps in AWS Amplify Continous Integration Workflow as the above screenshot presents.*
+
+        * **Provision**: AWS Amplify are provisioning a build environment with a Docker image for your website.
+        * **Build**: AWS Amplify are building your website source code.
+        * **Deploy**: AWS Amplify are deploying your website to remote.
+        * **Verify**: AWS Amplify are verifying its deployment to ensure your website are accessible.
+
+        *When **Build** fails, you need to review your code.*
+
+    3. Check the final appearance of your website.
+
+        Click the **Verify** icon to for more details.
+
+        ![Verify details](/assets/2019-11-13-effective-jekyll-hosting-websites-on-aws-amplify/step-4-3-1.jpg)
+
+        * **Domain**: You can access your website by this domain, AWS Amplify assign a secondary domain for you by default, and you can use your custom domain instead. By reading [AWS Amplify: Custom Domain Management](/aws-amplify-custom-domain-management) to learn how to do that.
+        * **Start at**: When the workflow worked.
+        * **Build duration**: How long the workflow takes.
+        * **Source repository**: Where AWS Amplify fetch your source code from, the tail of the URL is which the branch you specified.
+        * **Last commit message**: The last commit message on the branch.
+
+        AWS Amplify also presents screenshots on several popular devices, such as Google Pixcel, iPad Air 2, iPhone 7 Plus, iPhone 8, and Samsung S7, on the **Verify** tab at the bottom of the detail page like this.
+
+        ![Screenshots](/assets/2019-11-13-effective-jekyll-hosting-websites-on-aws-amplify/step-4-3-1.jpg)
+
 ## Conclution
+
+AWS Amplify provides a deep customized continous integration workflow and production deployment environment. AWS Amplify can integrate with other AWS services easily, and be friendly with most of popular 3rd party platform and services, such as Github, GitLab, BitBucket, and so on.
