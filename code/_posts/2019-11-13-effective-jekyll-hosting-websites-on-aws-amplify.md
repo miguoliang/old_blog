@@ -99,6 +99,6 @@ People can custom their AWS Amplify in the AWS Amplify Console. Settings of AWS 
 
         ![Screenshots](/assets/2019-11-13-effective-jekyll-hosting-websites-on-aws-amplify/step-4-3-1.jpg)
 
-## Conclution
+## Conclusion
 
 AWS Amplify provides a deep customized continous integration workflow and production deployment environment. AWS Amplify can integrate with other AWS services easily, and be friendly with most of popular 3rd party platform and services, such as Github, GitLab, BitBucket, and so on.
