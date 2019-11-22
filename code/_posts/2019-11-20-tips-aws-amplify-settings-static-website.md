@@ -48,6 +48,7 @@ People want some code running in production only, but not in development, for ex
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% raw %}
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {%- feed_meta -%}
@@ -55,14 +56,13 @@ People want some code running in production only, but not in development, for ex
     {%- include google-analytics.html -%}
     {%- include google-adsense.html -%}
   {%- endif -%}
+  {% endraw %}
 </head>
 ```
 
 The key line is:
 
-{% raw %}
-{%- if jekyll.environment == 'production' -%}
-{% endraw %}
+`{% raw %}{%- if jekyll.environment == 'production' -%}{% endraw %}`
 
 This line means the following codes will be compiled the environment variable `JEKYLL_ENV` is set to *production* only. As the Jekyll official document says, the `jekyll.environment` is set to *development* by default. So if you want to build in production mode, you need to set the environment variable `JEKYLL_ENV` to *production* before you run the build command like this.
 
