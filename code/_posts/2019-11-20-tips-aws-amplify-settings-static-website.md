@@ -70,4 +70,4 @@ This line means the following codes will be compiled the environment variable `J
 
 Save and deploy your again, then it works.
 
-***Notes here:*** *`JEKYLL_ENV=production` must leading the command, otherwise the build command can not read `JEKYLL_ENV`*.
+***Notes here:*** *`JEKYLL_ENV=production` must lead the command, otherwise the build command can not read `JEKYLL_ENV`*.
