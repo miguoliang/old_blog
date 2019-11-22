@@ -54,7 +54,7 @@ People can custom their AWS Amplify in the AWS Amplify Console. Settings of AWS 
 
         **Notes here**
 
-        *By default, the build command to a Jekyll website is `bundle exec jekyll b`, it is good in development environment, but not good in the production environment, because developers always use environment variables to distinguish the build environment in the source code. More about this topic by reading [How to build in production](/tips-aws-amplify-settings-static-website#build-in-production)*
+        *By default, the build command to a Jekyll website is `bundle exec jekyll b`, it is good in development environment, but not good in the production environment, because developers always use environment variables to distinguish the build environment in the source code. More about this topic by reading [Use Environment Variable JEKYLL_ENV in Production](/tips-aws-amplify-settings-static-website#use-environment-variable-jekyll_env-in-production)*
 
     5. Review and deploy your website by pressing **Save and deploy**.
 
