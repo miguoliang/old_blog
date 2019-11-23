@@ -19,7 +19,7 @@ layout: default
   </header>
 
   {%- if page.image -%}
-  <img class="post-image" src="{{ page.image | relative_url }}">
+  <amp-img class="post-image" src="{{ page.image | relative_url }}" width='1024' height='576' layout="responsive" alt="{{ page.title }}"></amp-img>
   {%- endif -%}
 
   <div class="post-content e-content" itemprop="articleBody">

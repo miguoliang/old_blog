@@ -24,7 +24,7 @@ github_username:  miguoliang
 google_analytics: UA-136531912-1
 
 # Build settings
-markdown: kramdown
+markdown: MyCustomProcessor
 theme: minima
 plugins:
   - jekyll-feed

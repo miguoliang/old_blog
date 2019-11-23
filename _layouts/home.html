@@ -30,7 +30,8 @@ layout: default
     {% for post in paginator.posts %}
     <li>
       {%- if post.image -%}
-      <img src="{{ post.image }}">
+      <amp-img src="{{ post.image }}" width="282" height="158" layout="responsive" alt="{{ post.image }}">
+      </amp-img>
       {%- endif -%}
       <div>
         <h2>

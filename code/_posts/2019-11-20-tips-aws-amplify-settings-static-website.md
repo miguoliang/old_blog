@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 2 Tips to AWS Amplify Settings to Websites
-description: 2 Tips to AWS Amplify Settings to Websites
+title: 3 Tips to AWS Amplify Settings to Websites
+description: 3 Tips to AWS Amplify Settings to Websites
 image: /assets/2019-11-20-tips-aws-amplify-settings-static-website/banner.jpg
 date: 2019-11-20 00:00:00 +08:00
 categories:
@@ -23,7 +23,8 @@ Suppose you have a AWS account, or you can follow the AWS official guide to [Cre
 ## Table of Contents
 
 * [Return 404 Status Code for 404 Page](#return-404-status-code-for-404-page)
-* [How to Build in Production](#how-to-build-in-production)
+* [Use Environment Variable JEKYLL_ENV in Production](#use-environment-variables-jekyll_env-in-production)
+* [Remove Github Pages Plugin in Gemfile](#remove-github-pages-plugin-in-Gemfile)
 
 ## Return 404 Status Code for 404 Page
 
@@ -71,3 +72,19 @@ This line means the following codes will be compiled the environment variable `J
 Save and deploy your again, then it works.
 
 ***Notes here:*** *`JEKYLL_ENV=production` must lead the command, otherwise the build command can not read `JEKYLL_ENV`*.
+
+## Remove Github Pages Plugin in Gemfile
+
+Github Pages Plugin is always started in safe mode and the `plugin_dir` is a random string. So your plugins in `plugin-dir` will be never loaded.
+
+Remove Github Pages Plugin in Gemfile:
+
+```gemfile
+# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
+# uncomment the line below. To upgrade, run `bundle update github-pages`.
+# gem "github-pages", group: :jekyll_plugins
+```
+
+
+
+***Notes here***: *No warning or information when Jekyll is running in safe mode, so people always waste much time here.*
