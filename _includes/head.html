@@ -3,7 +3,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  {%- capture styles %-}
+  {%- include sass/minima.scss -%}
+  {%- include sass/minima/_base.scss -%}
+  {%- include sass/minima/_layout.scss -%}
+  {%- include sass/minima/_syntax-highlighting.scss -%}
+  {%- include sass/custom.scss -%}
+  {%- include sass/search.scss -%}
+  {%- include sass/social-buttons.scss -%}
+  {%- endcapture -%}
+  <style amp-custom>
+  {{ styles | scssify }}
+  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' -%}
