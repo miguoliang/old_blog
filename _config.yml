@@ -19,6 +19,7 @@ email: miguoliang@hotmail.com
 description: Record My Life
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.miguoliang.com" # the base hostname & protocol for your site, e.g. http://example.com
+logo: "https://www.miguoliang.com/assets/img/logo.jpg"
 twitter_username: miguoliang
 github_username:  miguoliang
 google_analytics: UA-136531912-1
@@ -63,8 +64,3 @@ pagination:
   limit: 0
   sort_field: 'date'
   sort_reverse: true
-
-webmaster_verifications:
-  bing: 1F25C7FEE6EA0EA3DFB94AB5C17E3965
-  yandex: bfcf98bfa420e600
-  baidu: wyRKL4aXeh
