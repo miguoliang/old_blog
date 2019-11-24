@@ -15,4 +15,3 @@ tinify.key = args.key
 
 source = tinify.from_file(args.file)
 source.to_file(args.file)
-

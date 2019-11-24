@@ -1,26 +1,33 @@
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="amp-script-src"
+    content="
+      sha384-s53ST7JrqSnivURZ4PjdaCk_ITEszdJZ3LE8qiprmYsoiKfnc1piAy9zw4kINOle
+      sha384-VCOLlrd6WGBBtrrzdjQBKrDn8YgI_ssW5nSPvBWvFJMWKVTadAxswMaZPNdV_6kh
+    "
+  />
   {%- seo -%}
-  {%- capture styles %-}
-  {%- include sass/minima.scss -%}
-  {%- include sass/minima/_base.scss -%}
-  {%- include sass/minima/_layout.scss -%}
-  {%- include sass/minima/_syntax-highlighting.scss -%}
-  {%- include sass/custom.scss -%}
-  {%- include sass/search.scss -%}
-  {%- include sass/social-buttons.scss -%}
-  {%- endcapture -%}
+  {% capture styles %}
+  {% include styles.scss %}
+  {% endcapture %}
   <style amp-custom>
   {{ styles | scssify }}
   </style>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
   <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
+  <script defer custom-element="amp-script" src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js"></script>
+  <script defer custom-element="amp-script" src="/assets/js/simple-jekyll-search.js"></script>
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' -%}
     {%- include google-analytics.html -%}
     {%- include google-adsense.html -%}
     {%- include baidu-autopush.html -%}
   {%- endif -%}
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+  <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </head>
