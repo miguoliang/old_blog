@@ -2,13 +2,6 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="amp-script-src"
-    content="
-      sha384-s53ST7JrqSnivURZ4PjdaCk_ITEszdJZ3LE8qiprmYsoiKfnc1piAy9zw4kINOle
-      sha384-VCOLlrd6WGBBtrrzdjQBKrDn8YgI_ssW5nSPvBWvFJMWKVTadAxswMaZPNdV_6kh
-    "
-  />
   {%- seo -%}
   {% capture styles %}
   {% include styles.scss %}
@@ -20,8 +13,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
-  <script defer custom-element="amp-script" src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js"></script>
-  <script defer custom-element="amp-script" src="/assets/js/simple-jekyll-search.js"></script>
+  <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' -%}
     {%- include google-analytics-amp.html -%}
