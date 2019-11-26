@@ -66,7 +66,7 @@ People can custom their AWS Amplify in the AWS Amplify Console. Settings of AWS 
 
     1. Click your app's name on the left navigation.
 
-        ![Click your app's name](/assets/2019-11-13-effective-jekyll-hosting-websites-on-aws-amplify/step-4-1.jpg)
+        ![Click your app name](/assets/2019-11-13-effective-jekyll-hosting-websites-on-aws-amplify/step-4-1.jpg)
 
     2. Get the progress of the latest job.
 
