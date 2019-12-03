@@ -6,6 +6,8 @@ date: 2019-12-3 00:00:00 +08:00
 image: /assets/2019-12-3-apache-poi-multilevel-numbering-paragraph-microsoft-word-docx/banner.jpg
 categories:
     - code
+tags:
+    - apache poi
 ---
 
 Multilevel Numbering List is a useful function to Word users to structure the whole document.
