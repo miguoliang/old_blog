@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 3 Tips to AWS Amplify Settings to Websites
-description: 3 Tips to AWS Amplify Settings to Websites
+title: 4 Tips to AWS Amplify Settings to Websites
+description: 4 Tips to AWS Amplify Settings to Websites
 image: /assets/2019-11-20-tips-aws-amplify-settings-static-website/banner.jpg
 date: 2019-11-20 00:00:00 +08:00
 categories:
@@ -25,6 +25,7 @@ Suppose you have a AWS account, or you can follow the AWS official guide to [Cre
 * [Return 404 Status Code for 404 Page](#return-404-status-code-for-404-page)
 * [Use Environment Variable JEKYLL_ENV in Production](#use-environment-variables-jekyll_env-in-production)
 * [Remove Github Pages Plugin in Gemfile](#remove-github-pages-plugin-in-Gemfile)
+* [Correct Redirect Settings](#correct-redirect-settings)
 
 ## Return 404 Status Code for 404 Page
 
@@ -85,6 +86,19 @@ Remove Github Pages Plugin in Gemfile:
 # gem "github-pages", group: :jekyll_plugins
 ```
 
-
-
 ***Notes here***: *No warning or information when Jekyll is running in safe mode, so people always waste much time here.*
+
+## Correct Redirect Settings
+
+People need to redirect requests in two scenarios:
+
+* **Redirect to the only main domain**: A website has only one domain, e.g. www.miguoliang.com is the main domain of my blog, and miguoliang.com redirects to www.miguoliang.com permanently. People need to redirect request to the main domain permanently, otherwise:
+  
+  * Search Engine will be confused when it crawls your website, because it found there was a same page in its database.
+  * If you redirects request not permanently, just temporary, your website will get a low speed on opening. Because it will take much more time on multi redirects.
+
+* **Redirect HTTP to HTTPS**: Hypertext Transfer Protocol Secure (HTTPS) is an extension of the Hypertext Transfer Protocol (HTTP). It is used for secure communication over a computer network, and is widely used on the Internet. People need to redirect HTTP request to HTTPS, not only because of security, but also because of SEO.
+
+People need to correct their redirect settings like this:
+
+![Correct Redirect Settings](/assets/2019-11-20-tips-aws-amplify-settings-static-website/tips-4.jpg)
