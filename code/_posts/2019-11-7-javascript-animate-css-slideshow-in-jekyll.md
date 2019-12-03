@@ -6,6 +6,8 @@ description: Use Javascript and Animate.css to Create a Slideshow in Jekyll
 image: /assets/2019-11-7-javascript-animate-css-slideshow-in-jekyll/banner.jpg
 categories:
     - code
+tags:
+    - jekyll
 ---
 
 ## Introduction

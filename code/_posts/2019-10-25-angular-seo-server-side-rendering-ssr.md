@@ -6,6 +6,8 @@ description: Angular SEO using Server Side Rendering (SSR).
 image: /assets/2019-10-25-angular-seo-server-side-rendering-ssr/banner.jpg
 categories:
     - code
+tags:
+    - seo
 ---
 
 ## What is Server Side Rendering (SSR)

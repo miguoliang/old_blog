@@ -27,7 +27,7 @@ layout: default
         </h2>
         <span class="post-meta"><i class="fa fa-calendar" aria-hidden="true"
             style="margin-right: 5px"></i>{{ post.date | date: "%b %-d, %Y" }}</span>
-        <span class="post-category">{{ post.categories | first }}</span>
+        <span class="post-category">{{ post.tags | first }}</span>
       </div>
     </li>
     {% endfor %}

@@ -5,7 +5,9 @@ description: 4 Tips to AWS Amplify Settings to Websites
 image: /assets/2019-11-20-tips-aws-amplify-settings-static-website/banner.jpg
 date: 2019-11-20 00:00:00 +08:00
 categories:
-    - code
+  - code
+tags:
+  - aws amplify
 ---
 
 ## Introduction

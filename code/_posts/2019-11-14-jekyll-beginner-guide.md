@@ -4,6 +4,10 @@ title: A Beginner's Guide on Jekyll
 description: Quickly learn the basics of Jekyll.
 date: 2019-11-14 00:00:00 +08:00
 image: /assets/2019-11-14-jekyll-beginner-guide/banner.png
+categories:
+    - code
+tags:
+    - jekyll
 ---
 
 The purpose of writing this guide is to enable the reader to quickly learn the basics of Jekyll in order to understand the relevant content in other posts. So this guide is not a complete guide for Jekyll, but a quick start manual. This guide only covers the knowledge that may be used in my blog.

@@ -6,6 +6,8 @@ description: Fix Unexpected end of ZLIB input stream using Apache POI
 image: /assets/2019-1-11-apache-poi-unexpected-end-of-zlib-input-stream-exception/banner.jpg
 categories:
     - code
+tags:
+    - apache poi
 ---
 
 Pretty sure the problem is you overwriting the file. Try to save on a different path. If you still want to overwrite the file, save to something else, delete the original, then rename the file you wrote into place:

@@ -6,6 +6,8 @@ description: This article helps you make multiple lines in sweetalert2.
 image: /assets/2019-1-4-sweetalert-text-new-line/banner.jpg
 categories:
     - code
+tags:
+    - sweetalert
 ---
 
 It's different between the two API `swal(title, text)` and `swal(option)` on showing multi line text.

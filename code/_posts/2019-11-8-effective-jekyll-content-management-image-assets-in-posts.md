@@ -6,6 +6,8 @@ description: How to effective manage image assets in posts in Jekyll.
 image: /assets/2019-11-8-effective-jekyll-content-management-image-assets-in-posts/banner.jpg
 categories:
     - code
+tags:
+    - jekyll
 ---
 
 ## Introduction

@@ -6,6 +6,8 @@ image: /assets/2019-1-1-tips-to-elasticsearch-regular-expression/banner.jpg
 description: 3 Tips to Elasticsearch Regular Expression
 categories:
     - code
+tags:
+    - elasticsearch
 ---
 
 1. `\d` and `\w` are not supported in [regexp query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-regexp-query.html#regexp-syntax), so you have to use `[0-9]`, `[a-z]`, `[A-Z]`, or `[a-zA-Z]` instead.

@@ -6,6 +6,8 @@ description: How to fix PHP Performance Issues.
 image: /assets/2019-11-6-php-performance-issues/banner.jpg
 categories:
     - code
+tags:
+    - php
 ---
 
 ## Introduction

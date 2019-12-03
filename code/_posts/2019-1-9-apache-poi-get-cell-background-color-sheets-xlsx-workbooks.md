@@ -5,7 +5,9 @@ date:   2019-1-9 21:56:00 +0800
 description: This article provides a way to background color of a cell with solid pattern fill by POI.
 image: /assets/2019-1-9-apache-poi-get-cell-background-color-sheets-xlsx-workbooks/banner.jpg
 categories:
-    - code
+  - code
+tags:
+  - apache poi
 ---
 
 1\. Add dependency in Maven

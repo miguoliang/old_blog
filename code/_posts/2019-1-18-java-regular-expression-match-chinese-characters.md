@@ -6,6 +6,8 @@ description: How to match Chinese characters using regular expression in Java.
 image: /assets/2019-1-18-java-regular-expression-match-chinese-characters/banner.jpg
 categories:
     - code
+tags:
+    - java
 ---
 
 A word that is combined Chinese characters with alpha digits characters seems like a whole word. So `\b` is no use on matching the alpha digits characters in the word.

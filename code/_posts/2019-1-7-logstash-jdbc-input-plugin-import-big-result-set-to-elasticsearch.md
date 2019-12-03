@@ -4,7 +4,9 @@ title:  "How to import big result set to Elasticsearch by Logstash JDBC input pl
 date:   2019-1-7 16:00:00 +0800
 image: /assets/2019-1-7-logstash-jdbc-input-plugin-import-big-result-set-to-elasticsearch/banner.png
 categories:
-    - code
+  - code
+tags:
+  - elasticsearch
 ---
 Editing your logstash configuration file, and generally you can find it/them in `/etc/logstash/conf.d`; it depends on your settings in `logstash.yml` that is in `/etc/logstash/logstash.yml`.
 
