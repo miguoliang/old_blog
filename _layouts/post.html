@@ -19,6 +19,8 @@ layout: default
       {%- include social-buttons.html -%}</p>
   </header>
 
+  {%- include google-adsense-amp.html -%}
+
   {%- if page.image -%}
   <amp-img class="post-image" src="{{ page.image | relative_url }}" width='1024' height='576' layout="responsive"
     alt="{{ page.title }}">
@@ -39,7 +41,6 @@ layout: default
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 
-  <!-- <div class="just-comments" data-apikey="4a904bfb-3608-46ac-9c2e-edfd360c881d"></div>
-  <script async src="https://just-comments.com/w2.js"></script> -->
+  {%- include google-adsense-amp.html -%}
 
 </article>
