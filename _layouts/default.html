@@ -7,7 +7,6 @@
 
   {%- if jekyll.environment == 'production' -%}
     {%- include google-adsense-amp.html -%}
-    {%- include google-analytics-amp.html -%}
   {%- endif -%}
   
   {%- include header.html -%}
@@ -19,6 +18,10 @@
   </main>
 
   {%- include footer.html -%}
+
+  {%- if jekyll.environment == 'production' -%}
+    {%- include google-analytics-amp.html -%}
+  {%- endif -%}
 
 </body>
 
