@@ -26,15 +26,19 @@ Most of websites need a search box to help people find articles by keywords easi
     layout: null
     ---
     [
+        {% raw %}
         {% for post in site.posts %}
+        {% endraw %}
             {
-            "title"    : "{{ post.title | escape }}",
-            "category" : "{{ post.category }}",
-            "tags"     : "{{ post.tags | join: ', ' }}",
-            "url"      : "{{ site.baseurl }}{{ post.url }}",
-            "date"     : "{{ post.date }}"
+                "title"    : "{{ post.title | escape }}",
+                "category" : "{{ post.category }}",
+                "tags"     : "{{ post.tags | join: ', ' }}",
+                "url"      : "{{ site.baseurl }}{{ post.url }}",
+                "date"     : "{{ post.date }}"
+            {% raw %}
             } {% unless forloop.last %},{% endunless %}
         {% endfor %}
+        {% endraw %}
     ]
     ```
 
@@ -48,11 +52,15 @@ Most of websites need a search box to help people find articles by keywords easi
         <!DOCTYPE html>
         <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
+        {% raw %}
         {%- include head.html -%}
+        {% endraw %}
 
         <body>
 
+        {% raw %}
         {%- include header.html -%}
+        {% endraw %}
 
         <main class="page-content" aria-label="Content">
 
@@ -66,11 +74,15 @@ Most of websites need a search box to help people find articles by keywords easi
             </div>
 
             <div class="wrapper">
+            {% raw %}
             {{ content }}
+            {% endraw %}
             </div>
         </main>
 
+        {% raw %}
         {%- include footer.html -%}
+        {% endraw %}
 
         <!-- Import SimpleJekyllSearch scripts by CDN -->
         <script
