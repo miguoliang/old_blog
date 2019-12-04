@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Effective Jekyll: Add Simple Search Plugin to Your Jekyll Website"
 description: How to add simple search plugin to your Jekyll website
 date: 2019-11-9 00:00:00 +08:00
