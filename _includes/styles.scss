@@ -955,6 +955,8 @@ button:focus {
 
 ul.post-list {
 
+	margin-top: 1rem;
+
 	@include align-justify();
 
 	li {
