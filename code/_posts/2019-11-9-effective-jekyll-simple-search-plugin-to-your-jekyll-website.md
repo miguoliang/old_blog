@@ -104,6 +104,8 @@ Most of websites need a search box to help people find articles by keywords easi
 
     ![Final Result](/assets/2019-11-9-effective-jekyll-simple-search-plugin-to-your-jekyll-website/final-result.jpg)
 
+*You can find the [demo repository](https://github.com/miguoliang/effective-jekyll.git) in my Github.*
+
 ## Conclusion
 
 *SimpleJekyllSearch* is a popular plugin to make your Jekyll website searchable. It's fast and easy-to-use. People can configure the search rules by editing *search.json*, and custom the appearance by css.
