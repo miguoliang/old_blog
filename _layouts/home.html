@@ -8,20 +8,19 @@ layout: default
 
   {{ content }}
 
+  {%- include google-adsense-amp.html -%}
+
   <ul class="post-list">
     <!-- 
         Here is the main paginator logic called.
         All calls to site.posts should be replaced by paginator.posts 
     -->
-    <li>
-      {%- include google-adsense-amp.html -%}
-    </li>
     {% for post in paginator.posts %}
     <li>
       {%- if post.image -%}
       <amp-img src="{{ post.image }}.webp" width="282" height="158" layout="responsive" alt="{{ post.title }}">
-          <amp-img fallback src="{{ post.image }}" width="282" height="158" layout="responsive" alt="{{ post.title }}">
-          </amp-img>
+        <amp-img fallback src="{{ post.image }}" width="282" height="158" layout="responsive" alt="{{ post.title }}">
+        </amp-img>
       </amp-img>
       {%- endif -%}
       <div>
