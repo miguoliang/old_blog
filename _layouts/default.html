@@ -6,22 +6,20 @@
 <body>
 
   {%- if jekyll.environment == 'production' -%}
-    {%- include google-adsense-amp.html -%}
+    {%- include google-analytics-amp.html -%}
   {%- endif -%}
   
   {%- include header.html -%}
 
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
+            
       {{ content }}
+
     </div>
   </main>
 
   {%- include footer.html -%}
-
-  {%- if jekyll.environment == 'production' -%}
-    {%- include google-analytics-amp.html -%}
-  {%- endif -%}
 
 </body>
 
