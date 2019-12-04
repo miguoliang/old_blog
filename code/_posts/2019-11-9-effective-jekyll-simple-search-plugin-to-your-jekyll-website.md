@@ -44,5 +44,66 @@ Most of websites need a search box to help people find articles by keywords easi
     3. Paste the following codes and save changes to overwrite the default layout.
 
         ```html
-        
+        <!DOCTYPE html>
+        <html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+        {%- include head.html -%}
+
+        <body>
+
+        {%- include header.html -%}
+
+        <main class="page-content" aria-label="Content">
+
+            <div class="wrapper">
+                <!-- Search Box DOM Elements -->
+                <div class="search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="text" id="search-input" placeholder="Search posts by keyword ...">
+                    <ul id="results-container"></ul>
+                </div>
+            </div>
+
+            <div class="wrapper">
+            {{ content }}
+            </div>
+        </main>
+
+        {%- include footer.html -%}
+
+        <!-- Import SimpleJekyllSearch scripts by CDN -->
+        <script
+            src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js"></script>
+
+        <!-- Initialize SimpleJekyllSearch Plugin -->
+        <script>
+            window.simpleJekyllSearch = new SimpleJekyllSearch({
+                searchInput: document.getElementById('search-input'),
+                resultsContainer: document.getElementById('results-container'),
+                json: '{{ site.baseurl }}/search.json',
+                searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
+                noResultsText: 'No results found',
+                limit: 10,
+                fuzzy: false,
+                exclude: ['Welcome']
+            })
+        </script>
+
+        </body>
+
+        </html>
         ```
+
+        **Notes Here**
+
+        * The Search Box DOM elements is wrapped by `<div class="search">`, you can custom its appearance by css.
+        * Import *SimpleJekyllSearch* plugin scripts by the CDN URL <https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js>.
+        * Initialize *SimpleJekyllSearch* plugin after the DOM loaded.
+
+4. Generate and run your website locally by the command `jekyll serve`, and access it by opening `http://localhost:4000` on your browser.
+
+    ![Final Result](/assets/2019-11-9-effective-jekyll-simple-search-plugin-to-your-jekyll-website/final-result.jpg)
+
+## Conclusion
+
+*SimpleJekyllSearch* is a popular plugin to make your Jekyll website searchable. It's fast and easy-to-use. People can configure the search rules by editing *search.json*, and custom the appearance by css.
