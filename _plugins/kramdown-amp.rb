@@ -11,7 +11,7 @@ module Kramdown
                 if img_src.end_with?(".jpg") || img_src.end_with?(".png")
                     "<amp-img layout='responsive' src='#{el.attr['src']}' alt='#{el.attr['alt']}' width='#{w}' height='#{h}'><amp-img fallback layout='responsive' #{html_attributes(el.attr)} width='#{w}' height='#{h}'></amp-img></amp-img>"
                 else
-                    "<amp-img layout='responsive' #{html_attributes(el.attr)} width='535' height='#{h}' layout='responsive'></amp-img>"
+                    "<amp-img layout='responsive' #{html_attributes(el.attr)} width='#{w}' height='#{h}'></amp-img>"
                 end
             end
         end

@@ -232,7 +232,7 @@ margin-bottom: 5px;
 
 2. Open `http://localhost:4200` in your browser, and you will see the menu after 5 seconds.
 
-![Screenshot](/assets/2019-12-7-how-to-build-a-dynamic-menu-with-metismenu-in-angular-8/screenshot.gif)
+![Screenshot](/assets/2019-12-7-how-to-build-a-dynamic-menu-with-jquery-plugin-in-angular-8/screenshot.gif)
 
 ## Conclusion
 
