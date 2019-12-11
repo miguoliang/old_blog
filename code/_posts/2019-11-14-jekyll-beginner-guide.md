@@ -3,7 +3,7 @@ layout: post
 title: A Beginner's Guide on Jekyll
 description: Quickly learn the basics of Jekyll.
 date: 2019-11-14 00:00:00 +08:00
-image: /assets/2019-11-14-jekyll-beginner-guide/banner.png
+image: /assets/2019-11-14-jekyll-beginner-guide/banner.jpg
 categories:
     - code
 tags:

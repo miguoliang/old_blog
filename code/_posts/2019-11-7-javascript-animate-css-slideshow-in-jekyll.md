@@ -96,7 +96,7 @@ Now, I assume that you have mastered the basics above. I will program with VSCod
     * The portion of the page that exceeds the display range is hidden, so we have to set the `overflow` of the container to be `hidden`.
     * The three pages should be the same size and overlap, so we have set the `position` of the container to be `relative`, and set the `position` to `absolute` and the `top` to zero of the three pages. The relative position of the three pages looks like this:
 
-      ![Pages Arrangement](/assets/2019-11-7-javascript-animate-css-slideshow-in-jekyll/carousel.png)
+      ![Pages Arrangement](/assets/2019-11-7-javascript-animate-css-slideshow-in-jekyll/carousel.jpg)
 
     * We fill different colors for each page to distinguish.
     * For simplicity, We change the `opacity` to control which page is the visible page instead of changing the coordinates of pages. We add the `o0` class to the page slided out when its animation ends, and remove the `o2` class to the page slided in when its animation ends.
