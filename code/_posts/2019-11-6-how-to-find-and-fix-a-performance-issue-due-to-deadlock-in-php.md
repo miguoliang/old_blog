@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "How to fix PHP Performance Issues"
+title:  "How to find and fix a performance issue due to deadlock in PHP"
 date:   2019-11-06 19:31:00 +0800
-description: How to fix PHP Performance Issues.
-image: /assets/2019-11-6-php-performance-issues/banner.jpg
+description: This article shares my experience to find and fix a performance issue due to deadlock in PHP.
+image: /assets/2019-11-6-how-to-find-and-fix-a-performance-issue-due-to-deadlock-in-php/banner.jpg
 categories:
     - code
 tags:
