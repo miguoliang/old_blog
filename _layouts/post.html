@@ -34,9 +34,12 @@ layout: default
 
   </div>
 
-  {%- if site.disqus.shortname -%}
-  {%- include disqus_comments.html -%}
-  {%- endif -%}
+  <amp-facebook-comments width="1200"
+    height="400"
+    layout="responsive"
+    data-numposts="5"
+    data-href="{{ page.url }}">
+  </amp-facebook-comments>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 
