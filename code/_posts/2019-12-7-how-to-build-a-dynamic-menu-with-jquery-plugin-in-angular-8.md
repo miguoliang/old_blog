@@ -234,6 +234,8 @@ margin-bottom: 5px;
 
 ![Screenshot](/assets/2019-12-7-how-to-build-a-dynamic-menu-with-jquery-plugin-in-angular-8/screenshot.gif)
 
+*You can find [the demo's source code](https://github.com/miguoliang/metismenu-in-angular) in my github.*
+
 ## Conclusion
 
 Millions of *jQuery* plugins can help us speed up our development with fancy user experience, but pure *jQuery* programming can not hold complex projects in the future, that's why Angular was born. So we have to pay attention to make them work together as well.
