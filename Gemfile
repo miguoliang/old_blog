@@ -19,6 +19,8 @@ gem "minima", "~> 2.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
+  # gem "jekyll-seo-tag", path: "/Users/miguoliang/Documents/Github/jekyll-seo-tag"
+  gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
   gem "jekyll-paginate-v2"
   gem "jekyll-feed", "~> 0.6"

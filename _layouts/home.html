@@ -18,8 +18,8 @@ layout: default
     {% for post in paginator.posts %}
     <li>
       {%- if post.image -%}
-      <amp-img src="{{ post.image | image_size: '_16x9' | relative_url }}.webp" width="282" height="158" layout="responsive" alt="{{ post.title }}">
-        <amp-img fallback src="{{ post.image | image_size: '_16x9' | relative_url }}" width="282" height="158" layout="responsive" alt="{{ post.title }}">
+      <amp-img src="{{ post.image | image_size: '16x9' | relative_url }}.webp" width="282" height="158" layout="responsive" alt="{{ post.title }}">
+        <amp-img fallback src="{{ post.image | image_size: '16x9' | relative_url }}" width="282" height="158" layout="responsive" alt="{{ post.title }}">
         </amp-img>
       </amp-img>
       {%- endif -%}
