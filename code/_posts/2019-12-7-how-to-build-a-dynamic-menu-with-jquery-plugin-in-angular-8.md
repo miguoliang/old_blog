@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to build a dynamic menu with jQuery plugin in Angular 8
-description: How to build a dynamic menu with jQuery plugin in Angular 8
+description: This article shares my experiences about jQuery plugin integration in Angular 8. And you will learn how to create a dynamic menu with the jQuery plugin named metisMenu in Angular properly.
 image: /assets/2019-12-7-how-to-build-a-dynamic-menu-with-jquery-plugin-in-angular-8/banner.jpg
 date: 2019-12-7 00:00:00 +08:00:00
 categories:
