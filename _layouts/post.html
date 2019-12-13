@@ -18,8 +18,6 @@ layout: default
       {%- include social-buttons.html -%}</p>
   </header>
 
-  {%- include google-adsense-amp.html -%}
-
   {%- if page.image -%}
   <amp-img class="post-image" src="{{ page.image | image_size: '16x9' | relative_url }}.webp" width='1200' height='675' layout="responsive"
     alt="{{ page.title }}">
@@ -28,11 +26,17 @@ layout: default
   </amp-img>
   {%- endif -%}
 
+  {%- include google-adsense-amp.html -%}
+
   <div class="post-content e-content">
 
     {{ content }}
 
   </div>
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+
+  {%- include google-adsense-amp.html -%}
 
   <amp-facebook-comments width="1200"
     height="400"
@@ -40,8 +44,6 @@ layout: default
     data-numposts="5"
     data-href="{{ page.url }}">
   </amp-facebook-comments>
-
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 
   {%- include google-adsense-amp.html -%}
 
