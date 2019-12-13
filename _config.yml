@@ -22,6 +22,8 @@ url: "https://www.miguoliang.com" # the base hostname & protocol for your site, 
 logo: "https://www.miguoliang.com/assets/img/logo.jpg"
 twitter_username: miguoliang
 github_username:  miguoliang
+facebook_username: miguoliang1986
+rss: rss
 google_analytics: UA-136531912-1
 
 # Build settings

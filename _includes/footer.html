@@ -4,31 +4,9 @@
 
     <h2 class="footer-heading">{{ site.title | escape }}</h2>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-            {{ site.author | escape }}
-            {%- else -%}
-            {{ site.title | escape }}
-            {%- endif -%}
-          </li>
-          {%- if site.email -%}
-          <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-          {%- endif -%}
-        </ul>
-      </div>
+    {%- include social.html -%}
 
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-        <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-      </div>
-    </div>
+    {%- include subscribe.html -%}
 
   </div>
 
