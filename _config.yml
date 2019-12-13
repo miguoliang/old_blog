@@ -32,6 +32,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate-v2
+  - jekyll-last-modified-at
 
 sass:
   style: compressed

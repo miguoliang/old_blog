@@ -3,7 +3,6 @@ layout: post
 title: "Apache POI: Set the level of a paragraph in a multilevel numbering list in Microsoft Word Docx File"
 description: How to et the level of a paragraph in a multilevel numbering list in microsoft word docx file by Apache POI
 date: 2019-12-3 00:00:00 +08:00
-last_modified_at: 2019-12-13 09:52:00 +08:00
 image: /assets/2019-12-3-apache-poi-multilevel-numbering-paragraph-microsoft-word-docx/banner.jpg
 categories:
     - code
