@@ -34,13 +34,13 @@ layout: default
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 
+  {%- include google-adsense-amp.html -%}
+
   <amp-facebook-comments width="1200"
     height="400"
     layout="responsive"
     data-numposts="5"
     data-href="{{ page.url }}">
   </amp-facebook-comments>
-
-  {%- include google-adsense-amp.html -%}
 
 </article>
