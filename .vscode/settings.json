@@ -1,3 +1,4 @@
 {
-    "terminal.integrated.fontFamily": "monospace"
+    "terminal.integrated.fontFamily": "monospace",
+    "aws.onDefaultRegionMissing": "add"
 }
