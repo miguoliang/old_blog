@@ -78,6 +78,8 @@ Here, we need set Mailchimp username, api key, and list id here.
 
 ![Setup Environment Variables](/assets/2019-12-16-how-to-build-a-mailchimp-embed-form-in-amp-pages/step-2.jpg)
 
+You can learn **[How to find your List ID in Mailchimp](https://www.youtube.com/watch?v=UVOWy7ipm2o)**.
+
 ### 3. Create a Python virtual envrionment
 
 In some cases, you may need to use a virtual environment to install dependencies for your function. This can occur if your function or its dependencies have dependencies on native libraries, or if you used Homebrew to install Python.
