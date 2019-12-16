@@ -199,12 +199,11 @@ Paste codes into the HTML file.
 ```html
 <!-- Begin Mailchimp Signup Form -->
 <div id="mc_embed_signup">
-    <form action-xhr="https://6g75r81sp2.execute-api.us-west-1.amazonaws.com/default/mailchimp-proxy" method="post"
+    <form action-xhr="<YOUR ENDPOINTS>" method="post"
         id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div id="mc_embed_signup_scroll">
             <input type="email" value="" name="email" class="email" id="mce-EMAIL" placeholder="email address" required>
-            <div class="clear"><input type="submit" value="Subscribe" id="mc-embedded-subscribe"
-                    class="button"></div>
+            <div class="clear"><input type="submit" value="Subscribe" id="mc-embedded-subscribe" class="button"></div>
         </div>
         <div submit-success>
             <template type="amp-mustache">
