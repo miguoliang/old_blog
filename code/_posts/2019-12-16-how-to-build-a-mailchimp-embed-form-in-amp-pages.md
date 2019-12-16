@@ -12,15 +12,15 @@ tags:
 
 ## Introduction
 
-Mailchimp is a good solution to manage the email subscription to your website. Mailchimp provide embed form, apis, and online email design tools. Mailchimp can send welcome email to your visitor when people subscribe your email list on your website. Mailchimp is free for a small website. More about Mailchimp visit its [official website](https://mailchimp.com/).
+Mailchimp is an excellent solution to manage the email subscription to your website. Mailchimp provides embed form, APIs, and online email design tools. Mailchimp can send a welcome email to your visitor when people subscribe to your email list on your website. Mailchimp is free for a small website. More about Mailchimp, visit its [official website](https://mailchimp.com/).
 
-AMP is a web component framework to easily create user-first websites. AMP is a solution to speed up your website performance, and it is very friendly to Google SEO. [My website](www.miguoliang.com) what you are visiting is an AMP website. AMP is also a speicification to your HTML using, so many limitation can break your programming habits.
+AMP is a web component framework to create user-first websites easily. AMP is a solution to speed up your website performance, and it is very friendly to Google SEO. [My website](https://www.miguoliang.com) that you are visiting is an AMP website. AMP is also a specification to your HTML using, so many limitations can break your programming habits.
 
-Mailchimp is not AMP friendly, because CORS error occurs when you submit a form in AMP pages for securities reason by Mailchimp. So how to using both benifits of them is the ciritical content in this ariticle.
+Mailchimp is not AMP friendly, because CORS error occurs when you submit a form in AMP pages for securities reason by Mailchimp. So how to using both benefits of them is the critical content in this article.
 
 ## Solution
 
-Use an AWS Lambda function as an agent to subscribe a visitor's email to Mailchimp. Mailchimp provides APIs and SDKs so that developers can custom their workflows easily and flexible.
+Use an AWS Lambda function as an agent to subscribe to a visitor's email to Mailchimp. Mailchimp provides APIs and SDKs so that developers can custom their workflows easily and flexible.
 
 ### 1. Create a AWS Lambda function in Python 3.7
 
@@ -72,7 +72,7 @@ Use an AWS Lambda function as an agent to subscribe a visitor's email to Mailchi
 
 ### 2. Setup Envrionment Variables to Lambda Function
 
-For security reason, developers should seperate secrets, credentials, and passwords from source code. AWS Lambda provides environment variable settings like other famous platforms such as CircleCI, and so on.
+For security reasons, developers should separate secrets, credentials, and passwords from source code. AWS Lambda provides environment variable settings like other famous platforms such as [CircleCI](https://circleci.com), and so on.
 
 Here, we need set Mailchimp username, api key, and list id here.
 
@@ -82,7 +82,7 @@ You can learn **[How to find your List ID in Mailchimp](https://www.youtube.com/
 
 ### 3. Create a Python virtual envrionment
 
-In some cases, you may need to use a virtual environment to install dependencies for your function. This can occur if your function or its dependencies have dependencies on native libraries, or if you used Homebrew to install Python.
+In some cases, you may need to use a virtual environment to install dependencies for your function. That can occur if your function or its dependencies have dependencies on native libraries, or if you used Homebrew to install Python.
 
 * Create a new folder as the root directory of your project
 
@@ -228,11 +228,11 @@ Paste codes into the HTML file.
 
 ### 11. Verify the form on your AMP Pages
 
-*People can create a static website easily by Jekyll. You learn Jekyll in 5 minutes by reading [A Beginner's Guide on Jekyll](/jekyll-beginner-guide.html). People also can create a AMP page by their familiar ways.*
+*People can create a static website easily by Jekyll. You learn Jekyll in 5 minutes by reading [A Beginner's Guide on Jekyll](/jekyll-beginner-guide.html). People also can create an AMP page in their familiar ways.*
 
 Run your website by command `jekyll serve` and open `http://localhost:4000` on your browser.
 
-*In my blog website what you are visiting is a live demo, you can try to subscribe your email at the bottom of pages.*
+*In my blog website, what you are visiting is a live demo, you can try to subscribe to your email at the bottom of the pages.*
 
 ### 12. Verify subscriptions on your Mailchimp console
 
@@ -244,6 +244,6 @@ Run your website by command `jekyll serve` and open `http://localhost:4000` on y
 
 ## Conclusion
 
-There are many frameworks, tools, and practices to frontend development. But not all of them have good compatibility. So we need to do some work to integrate their features together to gain fancy user experience and speed up our development.
+There are many frameworks, tools, and practices for frontend development. But not all of them have excellent compatibility. So we need to do some work to integrate their features to gain excellent user experience and speed up our development.
 
 *You can download full source code about the Python program in my Github <https://github.com/miguoliang/mailchimp-proxy-aws-lambda> and use it in your project if you want.*
