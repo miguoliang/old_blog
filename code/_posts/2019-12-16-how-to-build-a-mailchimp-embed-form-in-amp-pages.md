@@ -50,21 +50,25 @@ Use an AWS Lambda function as an agent to subscribe a visitor's email to Mailchi
 
     ![Press Create function](/assets/2019-12-16-how-to-build-a-mailchimp-embed-form-in-amp-pages/step-1-6.jpg)
 
+  * Change `Handler` to **function.my_handler**
+
+    ![Change Handler](/assets/2019-12-16-how-to-build-a-mailchimp-embed-form-in-amp-pages/step-1-7.jpg)
+
   * Press *Add trigger*
 
-    ![Press Add Trigger](/assets/2019-12-16-how-to-build-a-mailchimp-embed-form-in-amp-pages/step-1-7.jpg)
+    ![Press Add Trigger](/assets/2019-12-16-how-to-build-a-mailchimp-embed-form-in-amp-pages/step-1-8.jpg)
 
   * Select *API Gateway* in *Trigger configuration*
 
-    ![Select API Gateway](/assets/2019-12-16-how-to-build-a-mailchimp-embed-form-in-amp-pages/step-1-8.jpg)
+    ![Select API Gateway](/assets/2019-12-16-how-to-build-a-mailchimp-embed-form-in-amp-pages/step-1-9.jpg)
 
   * Select *Create a new API* in *API*
 
-    ![Select Create a new API](/assets/2019-12-16-how-to-build-a-mailchimp-embed-form-in-amp-pages/step-1-9.jpg)
+    ![Select Create a new API](/assets/2019-12-16-how-to-build-a-mailchimp-embed-form-in-amp-pages/step-1-10.jpg)
 
   * Press *Add*
 
-    ![Press Add](/assets/2019-12-16-how-to-build-a-mailchimp-embed-form-in-amp-pages/step-1-10.jpg)
+    ![Press Add](/assets/2019-12-16-how-to-build-a-mailchimp-embed-form-in-amp-pages/step-1-11.jpg)
 
 ### 2. Setup Envrionment Variables to Lambda Function
 
