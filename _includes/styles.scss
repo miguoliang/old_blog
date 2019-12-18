@@ -421,10 +421,10 @@ pre {
 
 // Custom
 
-$nav-width: 220px !default;
+$nav-width: 250px !default;
 $padding-unit: 15px !default;
 
-header {
+header.sidebar {
 	width: $nav-width;
 	padding: $padding-unit;
 }
@@ -446,4 +446,8 @@ main {
 .svg-icon {
 	width: 1rem;
 	height: 1rem;
+}
+
+.font-smaller {
+	font-size: smaller !important;
 }
