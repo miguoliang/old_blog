@@ -3,7 +3,7 @@
 
 {%- include head.html -%}
 
-<body>
+<body class="bg-light">
 
   {%- if jekyll.environment == 'production' -%}
     {%- include google-analytics-amp.html -%}
@@ -11,15 +11,9 @@
   
   {%- include header.html -%}
 
-  <main class="page-content" aria-label="Content">
-    <div class="wrapper">
-            
-      {{ content }}
-
-    </div>
+  <main>
+    {{ content }}
   </main>
-
-  {%- include footer.html -%}
 
 </body>
 
