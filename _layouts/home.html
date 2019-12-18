@@ -4,15 +4,15 @@ layout: default
 
 <div class="home">
 
-  <h1>Latest Posts</h1>
+  <h1 class="mx-3 mx-md-0">Latest Posts</h1>
 
   {{ content }}
 
   {%- include google-adsense-amp.html -%}
 
-  <div class="row">
+  <div class="row mx-0 mx-md-n3">
     {% for post in paginator.posts %}
-    <div class="col-3 mt-3">
+    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-3">
       <div class="border shadow-sm rounded rounded-lg bg-white">
         {%- if post.image -%}
         <amp-img src="{{ post.image | image_size: '16x9' | relative_url }}.webp" width="282" height="158"

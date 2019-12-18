@@ -1,19 +1,20 @@
-<header class="sidebar bg-white position-fixed fixed-top fixed-bottom border-right border-right-dark">
+<header class="sidebar bg-white border-secondary p-3">
 
   {%- assign default_paths = site.pages | map: "path" -%}
   {%- assign page_paths = site.header_pages | default: default_paths -%}
 
-  <a class="h3 text-dark" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-
-  {% include social.html %}
+  <div class="d-flex flex-md-column justify-content-between align-items-center">
+    <a class="h3 text-dark mb-0 mb-md-2" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    {% include social.html %}
+  </div>
 
   {%- if page_paths -%}
-  <nav class="nav flex-column mt-3">
+  <nav class="nav flex-md-column justify-content-around mt-3">
     {%- for path in page_paths -%}
-      {%- assign my_page = site.pages | where: "path", path | first -%}
-      {%- if my_page.title and my_page.autogen == nil -%}
-        <a class="nav-link px-0 text-dark" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-      {%- endif -%}
+    {%- assign my_page = site.pages | where: "path", path | first -%}
+    {%- if my_page.title and my_page.autogen == nil -%}
+    <a class="nav-link px-0 text-dark py-0 py-md-2" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+    {%- endif -%}
     {%- endfor -%}
   </nav>
 

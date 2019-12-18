@@ -1,4 +1,4 @@
-<ul class="list-unstyled list-inline mt-3">
+<ul class="list-unstyled list-inline my-0 my-md-3">
   {%- if site.facebook_username -%}<li class="list-inline-item mr-3"><a
       href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}"><svg class="svg-icon">
         <use xlink:href="{{ '/assets/minima-social-icons.svg#facebook' | relative_url }}"></use>
@@ -19,7 +19,7 @@
       href="https://youtube.com/{{ site.youtube_username| cgi_escape | escape }}"><svg class="svg-icon">
         <use xlink:href="{{ '/assets/minima-social-icons.svg#youtube' | relative_url }}"></use>
       </svg> <span class="username">{{ site.youtube_username| escape }}</span></a></li>{%- endif -%}
-  {%- if site.rss -%}<li class="list-inline-item mr-3"><a href="{{ 'feed.xml' | relative_url }}"><svg class="svg-icon">
+  {%- if site.rss -%}<li class="list-inline-item"><a href="{{ 'feed.xml' | relative_url }}"><svg class="svg-icon">
         <use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use>
       </svg></a></li>{%- endif -%}
 </ul>

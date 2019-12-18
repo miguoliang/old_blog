@@ -421,19 +421,50 @@ pre {
 
 // Custom
 
+@mixin media-query($device) {
+	@media screen and (min-width: $device) {
+		@content;
+	}
+}
+
+$on-desktop: 768px;
 $nav-width: 250px !default;
 $padding-unit: 15px !default;
 
 header.sidebar {
-	width: $nav-width;
-	padding: $padding-unit;
+	position: fixed;
+	width: 100%;
+	border: 0;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	top: 0;
+	left: 0;
+	z-index: 1;
 }
 
 main {
-	margin-right: auto;
-	margin-left: $nav-width;
-	padding: $padding-unit;
+	margin: 0;
+	margin-top: 110px;
 	max-width: 1200px;
+}
+
+@include media_query($on-desktop) {
+	header.sidebar {
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: $nav-width;
+		border: 0;
+		border-right-width: 1px;
+		border-right-style: solid;
+	}
+
+	main {
+		margin: 0;
+		margin-right: auto;
+		margin-left: $nav-width;
+		max-width: 1200px;
+	}
 }
 
 .footer {

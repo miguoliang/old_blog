@@ -6,12 +6,12 @@
 <body class="bg-light">
 
   {%- if jekyll.environment == 'production' -%}
-    {%- include google-analytics-amp.html -%}
+  {%- include google-analytics-amp.html -%}
   {%- endif -%}
-  
+
   {%- include header.html -%}
 
-  <main>
+  <main class="px-md-3 py-3">
     {{ content }}
   </main>
 
