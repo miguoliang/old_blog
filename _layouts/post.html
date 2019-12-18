@@ -18,13 +18,13 @@ layout: default
     </div>
   </header>
 
-  {%- include google-adsense-amp.html -%}
+  {%- include google-adsense-amp.html max-height="100" -%}
 
   {{ content }}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 
-  {%- include google-adsense-amp.html -%}
+  {%- include google-adsense-amp.html max-height="100" -%}
 
   <amp-facebook-comments width="1200" height="400" layout="responsive" data-numposts="5" data-href="{{ page.url }}">
   </amp-facebook-comments>
