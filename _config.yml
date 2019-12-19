@@ -62,7 +62,7 @@ permalink: /:title.html
 
 pagination:
   enabled: true
-  per_page: 26
+  per_page: 24
   permalink: '/page/:num/'
   limit: 0
   sort_field: 'date'
