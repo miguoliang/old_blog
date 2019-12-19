@@ -44,7 +44,7 @@ Run command `jekyll new demo-website` to create a static website project.
 </head>
 ```
 
-## 3. Create *_layout/default_amp.html*
+## 3. Create *_layouts/default_amp.html*
 
 1. Create a folder named *_layouts* in the root directory of your website project.
 2. Create a file named *default_amp.html* in *_includes* folder.
