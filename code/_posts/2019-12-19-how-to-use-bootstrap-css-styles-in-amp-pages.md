@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to use Bootstrap CSS Styles in AMP Pages
-description: This article explains how to remove unused Bootstrap CSS Styles and use the rest of styles in AMP pages.
+description: This article explains how to remove unused Bootstrap CSS Styles and use the rest of the styles in AMP pages.
 date: 2019-12-19 00:00:00 +08:00:00
 image: /assets/2019-12-19-how-to-use-bootstrap-css-styles-in-amp-pages/banner.jpg
 categories:
@@ -12,7 +12,7 @@ tags:
 
 ## Introduction
 
-AMP does not allow developers import Bootstrap CSS Styles from any CDN, because Bootstrap has lots of styles so that it can make page renderering slow. Is it means we can not use Bootstrap to build responsive pages? No. You can learn the best practice to use Bootstrap in your AMP Pages correctly.
+AMP does not allow developers to import Bootstrap CSS Styles from any CDN, because Bootstrap has lots of styles so that it can make page rendering slow. Is it means we can not use Bootstrap to build responsive pages? No. You can learn the best practice to use Bootstrap in your AMP Pages correctly.
 
 ## 1. Start a new website project
 
@@ -114,4 +114,4 @@ Paste the source code that you just copied into *_includes/styles.scss*.
 
 ## Conclusion
 
-AMP is strict, Bootstrap is convient and powerful, but they are not compatible with each other by default. What we need in the article is remove unused Bootstrap CSS Styles and make useful styles imported inline. I hope it helps.
+AMP is strict, Bootstrap is convenient and powerful, but they are not compatible with each other by default. What we need in the article is to remove unused Bootstrap CSS Styles and make useful styles imported inline. I hope it helps.
