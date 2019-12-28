@@ -12,11 +12,11 @@ tags:
 
 ## Introduction
 
-`amp-img` tags are a better alternative to `img` tag in AMP pages. `amp-image` tags [lazy-load images](https://web.dev/offscreen-images/?utm_source=lighthouse&utm_medium=unknown) outside the first viewport automatically. More details about `amp-img` tags from [AMP official website](https://amp.dev/documentation/guides-and-tutorials/develop/media_iframes_3p/?format=websites#images).
+AMP image tags (`amp-img`) are a better alternative to native HTML image tags (`img`) in AMP pages. AMP image tags [lazy-load images](https://web.dev/offscreen-images/?utm_source=lighthouse&utm_medium=unknown) outside the first viewport automatically. More details about AMP image tags from [AMP official website](https://amp.dev/documentation/guides-and-tutorials/develop/media_iframes_3p/?format=websites#images).
 
-Jekyll use `img` tags to display image by default. We need to custom the default markdown parser to generate `amp-img` tags instead of `img` tags. Fortunately, we don't have to develop a markdown parser from zero, what we have to do is only inherite the default markdown parser and override the special method which parse the markdown image expression to the HTML `img` tags.
+Jekyll uses native HTML image tags to display images by default. We need to custom the default markdown parser to generate AMP image tags instead of native HTML image tags. Fortunately, we don’t have to develop a markdown parser from zero. What we have to do is only inherit the default markdown parser and override the particular method, which parses the markdown image expression to the native HTML image tags.
 
-*If you are new to Jekyll, you can read my **[Jekyll beginner's guide in 5 minutes](/jekyll-beginner-guide.html)** to learn basics, or access [Jekyll official website](https://jekyllrb.com/) to systematic learn it.*
+*If you are new to Jekyll, you can read my **[Jekyll beginner's guide in 5 minutes](/jekyll-beginner-guide.html)** to learn basics or access [Jekyll's official website](https://jekyllrb.com/) to systematic learn it.*
 
 ## 1. Create a Jekyll website project
 
@@ -26,9 +26,9 @@ Run command `jekyll new demo-website` in your prompt.
 
 Run command `mkdir _plugins` in your prompt.
 
-Jekyll will load custom plugins automatically when developer run Jekyll commands in their prompts. Custom plugins should written in Ruby. All classes loaded by Jekyll can be used directly, and other third party libraries can be installed by *Bundle* and imported in *Gemfile*.
+Jekyll loads custom plugins automatically when developers run Jekyll commands in their prompts. Custom plugins should be written in Ruby. All classes loaded by Jekyll can be used directly, and other third-party libraries can be installed by Bundle and imported in Gemfile.
 
-Another way developers import their plugins is packaging their Ruby programs to *gem*, and import gems in *Gemfile*. I recommend you work in this way when you develop a big plugin, otherwise placing your ruby files into the *_plugins* folder is easier.
+Another way developers import their plugins is by packaging their Ruby programs to gem, and import gems in Gemfile. I recommend you work in this way when you develop a big plugin, otherwise placing your ruby files into the _plugins folder is more comfortable.
 
 ## 3. Create a Ruby file in the *_plugins* folder
 
@@ -127,8 +127,8 @@ Jekyll creates a *_site* folder in the root directory of your website, and all H
 
 Open *_site/2019/12/amp-img.html*, and you can find no `img` tag in it, and `amp-img` insteads.
 
-*My blog you are reading is a great practice of AMP Pages in Jekyll, and you can find its code in my [Github repository](https://github.com/miguoliang/miguoliang.github.io.git).*
+*My blog you are reading is an excellent practice of AMP Pages in Jekyll, and you can find its code in my [Github repository](https://github.com/miguoliang/miguoliang.github.io.git).*
 
 ## Conclusion
 
-AMP components are powerful, well-tested and SEO friendly. Google recommends AMP Pages in modern website design and development. To Lazy-load images is essential for the website performance, and we can use `amp-img` tags without scripts.
+AMP components are robust, well-tested, and SEO friendly. Google recommends AMP Pages in modern website design and development. To Lazy-load images is essential for the website performance, and we can use AMP image tags (`amp-img`) without scripts.
