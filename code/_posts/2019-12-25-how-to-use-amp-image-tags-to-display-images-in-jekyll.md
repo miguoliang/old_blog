@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to use amp-img tag to display image in Jekyll
+title: How to use AMP Image Tags to Display Images in Jekyll
 description: You will learn how to build a custom plugin to generate amp-img tag instead of img tag in Jekyll.
-image: /assets/2019-12-25-how-to-use-amp-img-tag-to-display-image-in-jekyll/banner.jpg
+image: /assets/2019-12-25-how-to-use-amp-image-tags-to-display-images-in-jekyll/banner.jpg
 date: 2019-12-25 00:00:00 +08:00:00
 categories:
     - code
