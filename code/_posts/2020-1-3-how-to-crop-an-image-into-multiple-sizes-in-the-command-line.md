@@ -3,7 +3,7 @@ layout: post
 title: How to crop an image into multiple sizes in the command line
 description: This article talks about how to an image into multiple sizes in the command line.
 image: /assets/2020-1-3-how-to-crop-an-image-into-multiple-sizes-in-the-command-line/banner.jpg
-date: 2020-01-30 00:00:00 +08:00:00
+date: 2020-01-03 00:00:00 +08:00:00
 categories:
     - code
 tags:
