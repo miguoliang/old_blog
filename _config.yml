@@ -54,6 +54,7 @@ exclude:
 header_pages:
   # - food.md
   - code.md
+  - coronavirus.md
   # - road.md
   - note.md
   - about.md

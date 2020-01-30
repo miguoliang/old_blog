@@ -20,6 +20,15 @@ layout: default
 
   {%- include google-adsense-amp.html max-height="100" -%}
 
+  {%- if page.banner -%}
+  <amp-img class="post-image" style="margin-bottom: 2rem;"
+    src="{{ page.image | image_size: '19x10' | relative_url }}.webp" width='1200' height='675' layout="responsive"
+    alt="{{ page.title }}">
+    <amp-img fallback class="post-image" src="{{ page.image | image_size: '19x10' | relative_url }}" width='1200'
+      height='675' layout="responsive" alt="{{ page.title }}"></amp-img>
+  </amp-img>
+  {%- endif -%}
+
   {{ content }}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
