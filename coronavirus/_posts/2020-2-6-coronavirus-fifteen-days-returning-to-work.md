@@ -43,3 +43,7 @@ God bless China and Chinese people!
 * **CONFIRMED CASES**: 28,060
 * **SUSPECTED CASES**: 24,702
 * **CURED CASES**: 1,153
+
+## My Related Posts
+
+* [Coronavirus 10 Days: Things Get Worse](/coronavirus/2020-1-30-coronavirus-ten-days-things-get-worse.md)
