@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "10 DAYS: THINGS ARE GETTING WORSE"
+title: "CORONAVIRUS 10 DAYS: THINGS ARE GETTING WORSE"
 description: More deaths, suspected cases, and confirmed cases than yesterday. The streets are calm again.
 image: /assets/2020-1-30-coronavirus-ten-days-things-get-worse/banner.jpg
 banner: true
@@ -9,13 +9,6 @@ categories:
 tags:
     - coronavirus
 ---
-
-## LATEST OFFICIAL DATA
-
-* **DEATHS**: 170
-* **CONFIRMED CASES**: 7,830
-* **SUSPECTED CASES**: 12,167
-* **CURED CASES**: 140
 
 ## THINGS ARE GETTING WORSE
 
@@ -33,4 +26,9 @@ For now, people don't worry about food, water, power, and networks at all. Inste
 
 My best wishes to China, my motherland, I am loving and living in.
 
-*Images in this article are from Internet, Notify me if infringement, I will remove it instantly.*
+## LATEST OFFICIAL DATA
+
+* **DEATHS**: 170
+* **CONFIRMED CASES**: 7,830
+* **SUSPECTED CASES**: 12,167
+* **CURED CASES**: 140
