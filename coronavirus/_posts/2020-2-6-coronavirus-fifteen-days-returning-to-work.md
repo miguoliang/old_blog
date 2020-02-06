@@ -3,7 +3,6 @@ layout: post
 title: "CORONAVIRUS 15 DAYS: RETURNING TO WORK"
 description: From Feb. 3rd, 2020, more and more people were returning to work from their hometowns. But it doesn't mean that coronavirus has passed. The Chinese ecnomic is facing a huge challenge that it was never seen.
 image: /assets/2020-2-6-coronavirus-fifteen-days-returning-to-work/banner.jpg
-banner: true
 categories:
     - coronavirus
 tags:

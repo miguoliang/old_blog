@@ -3,7 +3,6 @@ layout: post
 title: "CORONAVIRUS 10 DAYS: THINGS ARE GETTING WORSE"
 description: More deaths, suspected cases, and confirmed cases than yesterday. The streets are calm again.
 image: /assets/2020-1-30-coronavirus-ten-days-things-get-worse/banner.jpg
-banner: true
 categories:
     - coronavirus
 tags:
