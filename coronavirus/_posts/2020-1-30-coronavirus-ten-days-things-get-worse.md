@@ -11,7 +11,7 @@ tags:
 
 ## THINGS ARE GETTING WORSE
 
-More deaths suspected cases and confirmed cases than yesterday, and there is still no effective cure for this disease. More and more countries, such as the United States and Japan, have joint to the battle to coronavirus, and more and more famous news media are focus on this topic. Therefore, the struggle to coronavirus in China has evolved into a worldwide fight to coronavirus.
+More death, suspected, and confirmed cases than yesterday, and there is still no effective cure for this disease. More and more countries, such as the United States and Japan, have joint to the battle to coronavirus, and more and more famous news media are focus on this topic. Therefore, the struggle to coronavirus in China has evolved into a worldwide fight to coronavirus.
 
 In the past recent days, less lousy news appears in unofficial channels so that people who are far away from Wuhan relaxed vigilance gradually, more and more people walked on the street, I think, they were trying to return to their healthy lives. With the release of rework time from the central and local governments, people thought everything had been in control.
 
