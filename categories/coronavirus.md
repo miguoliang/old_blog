@@ -5,7 +5,7 @@
 layout: coronavirus
 title: Coronavirus
 permalink: /coronavirus/
-description: I like coding and live on it. I record and share skills and thinkings here.
+description: 2019-nCoV is happening in China. As a Chinese citizen, I decide to writing words to record this history. These articles covers news, numbers, policies, and my thinkings.
 pagination:
     enabled: true
     category: coronavirus

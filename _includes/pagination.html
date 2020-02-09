@@ -1,0 +1,16 @@
+<!-- 
+    Showing buttons to move to the next and to the previous list of posts (pager buttons).
+  -->
+{% if paginator.total_pages > 1 %}
+<nav aria-label="Page navigation" class="mt-3 text-center">
+    {% if paginator.previous_page %}
+    <a class="btn btn-primary"
+        href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    {% endif %}
+    {% if paginator.next_page %}
+    <a class="btn btn-primary" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older
+        Posts &rarr;</a>
+    {% endif %}
+    </ul>
+</nav>
+{% endif %}
