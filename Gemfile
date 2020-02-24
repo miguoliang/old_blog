@@ -25,6 +25,7 @@ group :jekyll_plugins do
   gem "jekyll-paginate-v2"
   gem "jekyll-feed", "~> 0.6"
   gem "jekyll-last-modified-at"
+  gem "new-post", :path => "_plugins"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
