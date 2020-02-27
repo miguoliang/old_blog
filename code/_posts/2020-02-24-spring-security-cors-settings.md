@@ -11,7 +11,7 @@ tags:
 
 ## 1. Activate CORS filter
 
-Create a class named WebSecurityConfig which is inherited from WebSecurityCOnfigurerAdapter, and override its configure method, like this:
+Create a class named WebSecurityConfig which is inherited from WebSecurityConfigurerAdapter, and override its configure method, like this:
 
 ```java
 @Configuration
@@ -28,7 +28,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 ## 2. Configure CORS settings
 
-Create a class named WebCorsConfig, andd the *Configuration* annotation to it, and add a method named corsConfigurationSource with the Bean annotation, like this:
+Create a class named WebCorsConfig, add the *Configuration* annotation to it, and add a method named corsConfigurationSource with the Bean annotation, like this:
 
 ```java
 import java.util.Arrays;
