@@ -91,7 +91,7 @@ People can custom their AWS Amplify in the AWS Amplify Console. Settings of AWS 
 
         ![Verify details](/assets/2019-11-13-effective-jekyll-hosting-websites-on-aws-amplify/step-4-3-1.jpg)
 
-        * **Domain**: You can access your website by this domain, AWS Amplify assign a secondary domain for you by default, and you can use your custom domain instead. By reading [AWS Amplify: Custom Domain Management](/aws-amplify-custom-domain-management) to learn how to do that.
+        * **Domain**: You can access your website by this domain, AWS Amplify assign a secondary domain for you by default, and you can use your custom domain instead.
         * **Start at**: When the workflow worked.
         * **Build duration**: How long the workflow takes.
         * **Source repository**: Where AWS Amplify fetch your source code from, the tail of the URL is which the branch you specified.

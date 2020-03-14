@@ -18,11 +18,7 @@ I will show you how to create a simple slideshow using Javascript and Animate.cs
 
 These guides can help you quickly learn the basics we need in the following steps:
 
-* Quickly learn the basics of Javascript by [The Beginner's Guide on Javascript](/javascript-beginner-guide.html).
-* Quickly learn the basics of Animate.css by [The Beginner's Guide on Animate.css](/animate-css-beginner-guide.html).
 * Quickly learn the basics of Jekyll by [The Beginner's Guide on Jekyll](/jekyll-beginner-guide.html).
-* Quickly learn the basics of CSS3 by [The Beginner's Guide on CSS3](/css-beginner-guide.html).
-* Quickly learn the basics of HTML5 by [The Beginner's Guide on HTML5](/html-beginner-guide.html).
 
 Now, I assume that you have mastered the basics above. I will program with VSCode, and you can use any other text editor you like instead.
 

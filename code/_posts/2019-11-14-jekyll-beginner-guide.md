@@ -190,7 +190,7 @@ Jekyll is not only a static website builder but also a content management system
 
 ### Display an image
 
-I recommend you reading [Effective Jekyll Content Management: Image Assets in Posts](/assets/2019-11-8-effective-jekyll-content-management-image-assets-in-posts) to learn the solution to manage a large number of posts and their images clearly and effectively in Jekyll. The following steps are a practice to the solution.
+I recommend you reading [Effective Jekyll Content Management: Image Assets in Posts](/assets/2019-11-8-effective-jekyll-content-management-image-assets-in-posts.html) to learn the solution to manage a large number of posts and their images clearly and effectively in Jekyll. The following steps are a practice to the solution.
 
 1. Create an image assets folder by the command `mkdir -p assets/2019-11-15-first-post` in the root of your website.
 2. Download an image from the Internet and save it to the image assets folder you just created. Suppose the image file name is `my-house.jpg`.

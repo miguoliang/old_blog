@@ -45,4 +45,4 @@ God bless China and the Chinese people!
 
 ## My Related Posts
 
-* [Coronavirus 10 Days: Things Get Worse](/coronavirus/2020-1-30-coronavirus-ten-days-things-get-worse.md)
+* [Coronavirus 10 Days: Things Get Worse](/coronavirus/2020-1-30-coronavirus-ten-days-things-get-worse.html)
