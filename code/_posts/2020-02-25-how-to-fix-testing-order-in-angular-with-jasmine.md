@@ -15,7 +15,7 @@ tags:
 
 Jasmine is an Unit Testing framework for Javascript, and Angular uses it. Angular also use Krama to manage the environment configuration of unit testing.
 
-By default, Jasmine run testing methods in a random order , so no matter what the order you write testing cases that the running orders are out of control. The random ordering works well for isolutated cases, but it maybe confused with a context relative workflow testing that sometimes we call this kind of testing to integration testing.
+By default, Jasmine executes testing methods in random order. It means that the sequence of test methods is meaningless. Independent testing methods work well in random order, and Context-related testing methods only work well in a particular order.
 
 Suppose that we plan to test the entire authentication workflow, I will show you how to make these testing stable and reliable.
 
@@ -29,12 +29,12 @@ Suppose that we plan to test the entire authentication workflow, I will show you
 
 As the above workflow, we need to:
 
-1. Generate a random email as the username of an account and reuse it in the following steps.
-2. Call the registeration RESTful API, and store the activation token.
-3. Call the resend activation token RESTful API, and confirm the status of the response being 200.
-4. Call the activation RESTful API to activate the account we just created with the activation token we just stored at *Step 2*.
-5. Call the login RESTful API, and get the access token it returns for any other requests which need access token.
-6. Call the registeration RESTful API again with the same username we generated in *Step 1*, and expect an error response about the account has been registered.
+1. Generate a random email as the username of an account and store it for the future use.
+2. Store the activation token by RESTful registration API.
+3. Confirm the response status of the resend activation token RESTful API is 200
+4. Activate the account we just created by RESTful activation API with the activation token we only stored at *Step 2*.
+5. Get the access token by RESTful login API.
+6. Call the RESTful registration API again with the same username we generated in *Step 1*, and expect an error response about the account we just registered.
 
 ## Writing Testing Cases
 
@@ -157,7 +157,7 @@ fdescribe('AuthenticationService', () => {
 });
 ```
 
-As we discussed at beginning of this tutorial, the running ordering is random in Jasmine by default. Therefore, the login testing case maybe run before registeration testing case so that everything is out of control and this integration testing is meaningless.
+As we discussed at the beginning of this tutorial. By default, the execution order of testing methods is random in Jasmine. We can not make sure that the login testing method is running in the first order strictly.
 
 ## Make the Running Order Being the Same as Writting Order (Disable the Random Ordering)
 
@@ -207,4 +207,4 @@ That's it!
 
 ## Conclusion
 
-Jasmine is a BDD testing framework. BDD means Behaviors Driven Development. BDD is an practice of TDD (Test-Driven Development. Although we don't need to follow these priciples strictly anytime, but these priciples can help us to improve and control our products indeed.
+Integration testing is necessary today. An excellent practice for integration testing is working with a BDD (Behavior-Driven Development) testing framework. And Jasmine is one of them in front-end development. Most of the testing framework executes testing methods in random order by default for performance reason. What we need to do is only configure it to satisfy our requirements.
