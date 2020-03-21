@@ -77,12 +77,6 @@ hr {
 	overflow: visible
 }
 
-h1,
-h2 {
-	margin-top: 0;
-	margin-bottom: .5rem
-}
-
 p {
 	margin-top: 0;
 	margin-bottom: 1rem
@@ -162,34 +156,9 @@ template {
 	display: none
 }
 
-.h3,
-.h5,
-.h6,
-h1,
-h2 {
-	margin-bottom: .5rem;
-	font-weight: 500;
-	line-height: 1.2
-}
-
 h1 {
-	font-size: 2.5rem
-}
-
-h2 {
-	font-size: 2rem
-}
-
-.h3 {
-	font-size: 1.75rem
-}
-
-.h5 {
-	font-size: 1.25rem
-}
-
-.h6 {
-	font-size: 1rem
+	margin-top: 0;
+	font-size: 2.5em;
 }
 
 hr {

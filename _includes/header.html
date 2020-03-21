@@ -4,7 +4,7 @@
   {%- assign page_paths = site.header_pages | default: default_paths -%}
 
   <div class="d-flex flex-md-column justify-content-between align-items-center">
-    <a class="h3 text-dark mb-0 mb-md-2" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <h2 style="margin-bottom: .5em; margin-top: 0;"><a class="text-dark mb-0 mb-md-2" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h2>
     {% include social.html %}
   </div>
 

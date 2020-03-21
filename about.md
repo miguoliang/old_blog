@@ -2,23 +2,27 @@
 layout: page
 title: About
 permalink: /about.html
-description: >-
-    A brief introduction to myself and this blog.
+description: A brief introduction to myself and this blog.
 ---
 
-## About me
+## Who am I
 
-I am 15+ years experienced full stack developer in China. I am working in Changsha, Hunan. I have a company to help other companies on software development, seo, and technical consulting, and the company has been 5 years old.
+I am 15+ years experienced full stack developer in China. I am working in Changsha, Hunan. I have a company to help other companies on software development, seo, and technical consulting, and my company has been 5 years old.
 
-## About this blog
+## What's the blog for
 
-Many kinds of projects I finished in the past years. I need to write something helpful here to help other developers who may be facing some problems that I used to meet too.
+Many kinds of projects I finished in the past years. I need to write something helpful here to help other developers who are facing some problems that I used to meet too.
 
-## My dreams
+## I hope more and more people can
 
-I want to do many things about my career, trips, foods, and values before the end of my life. I hope I can finish them someday. And I would like to share my goals with you, my guest, here:
+1. Subscribe to my twitter, my facebook, and my mail list.
+2. Get help from my shares.
 
-- I dream to code for the future of the human being in Google or Tesla.
-- I dream to travel to all the world wonder of Civilization VI in the real world.
-- I dream to taste all delicious food around the world with my wife.
-- I dream to write something helpful for others.
+## I desire to
+
+1. Develop or maintain websites for NPOs that helps children or women. It's part-time and free.
+2. Gain more business opportunities on technical consulting and software development.
+
+## My work time
+
+Monday - Friday, 9:00 ~ 17:30 GMT+8:00
