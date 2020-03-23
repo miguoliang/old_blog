@@ -15,7 +15,7 @@ tags:
 
 ## Introduction
 
-This guide is a sister to [Generate Java Unit Test Code Coverage Report with JaCoCo in Gradle](/generate-java-unit-test-code-coverage-report-with-jacoco-in-gradle.html). This guide shows you how to do the same in [Maven](https://maven.apache.org/). Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information. Both Gradle and Maven are widely tools.
+This guide is a sister to [Generate Java Unit Test Code Coverage Report with JaCoCo in Gradle](/generate-java-unit-test-code-coverage-report-with-jacoco-in-gradle.html). This guide shows you how to do the same in [Maven](https://maven.apache.org/). Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information. Both Gradle and Maven are widely used tools.
 
 ## Install Maven
 
