@@ -40,14 +40,7 @@ That's it!
 
 ## Setup an empty Java Project
 
-Firstly, make an empty folder named *maven-jacoco* and we will work in it.
-
-```shell
-mkdir maven-jacoco
-cd maven-jacoco
-```
-
-Secondly, run Maven setup command in interactive mode.
+Firstly, run Maven setup command in interactive mode, and it will create a folder named the *artifactId* in your current directory.
 
 ```shell
 $ mvn archetype:generate
