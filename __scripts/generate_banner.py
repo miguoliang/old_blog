@@ -1,7 +1,6 @@
 from PIL import Image, ImageDraw, ImageFont
 import math
 import argparse
-import os
 from datetime import date
 import re
 
@@ -77,7 +76,7 @@ def new_image(width, height, text, bgColor, fgColor):
     new_img = Image.new('RGB', (int(width), int(height)), bgColor)
     draw_image(new_img, text, fgColor)
     new_text = re.sub('\W+', '-', text).lower()
-    new_img.save(r'%s/%s-%s.jpg' % (os.getcwd(), date.today().isoformat(), new_text.strip('-')))
+    new_img.save(r'../assets/%s-%s/banner.jpg' % (date.today().isoformat(), new_text.strip('-')))
     del new_img
 
 
@@ -96,8 +95,8 @@ if '__main__' == __name__:
     parser = argparse.ArgumentParser()
     parser.add_argument('-t', '--text', help='Text', required=True, type=str)
     parser.add_argument('-f', '--foreground', help='Foreground Color',
-                        default='white', choices=['black', 'white'])
+                        default='white')
     parser.add_argument('-b', '--background', help='Background Color',
-                        default='green', choices=['black', 'white', 'green', 'red', 'yello'])
+                        default='green')
     args = parser.parse_args()
     new_image(1200, 1200, args.text, fgColor=args.foreground, bgColor=args.background)

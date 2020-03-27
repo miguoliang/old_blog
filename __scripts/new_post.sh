@@ -26,4 +26,7 @@ tags:
 mkdir -p "assets/$TODAY-$TITLE"
 
 ## 生成图片
-magick -size 1200x1200 -background green -fill white -gravity center -font __scripts/arial.ttf label:"$2" "assets/$TODAY-$TITLE/banner.jpg"
+# magick -size 1200x1200 -background green -fill white -gravity center -font __scripts/arial.ttf label:"$2" "assets/$TODAY-$TITLE/banner.jpg"
+cd __scripts
+python3 generate_banner.py -t "$2" -f "$3" -b "$4"
+cd -
