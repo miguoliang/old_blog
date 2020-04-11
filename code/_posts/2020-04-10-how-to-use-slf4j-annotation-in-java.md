@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to use Slf4j Annotation in Java
-description:
+description: Reduce boring codes and make your work more efficient than before on logging.
 image: /assets/2020-04-10-how-to-use-slf4j-annotation-in-java/banner.jpg
 categories:
     - code
