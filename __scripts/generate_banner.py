@@ -27,7 +27,7 @@ def get_lines(expected_line_number, text):
 
 
 def get_font_size(lines, font_size):
-    fnt = ImageFont.truetype('arial.ttf', font_size)
+    fnt = ImageFont.truetype('arialbd.ttf', font_size)
     fnt_sizes = []
     for ln in lines:
         fnt_sizes.append(fnt.getsize(ln))
@@ -59,7 +59,7 @@ def draw_image(new_img, text, fgColor):
     padding = 10
     x = (img_size[0] - fnt_sizes[0][0]) / 2
     y = (img_size[1] - fnt_size[1] - (len(fnt_sizes) - 1) * padding) / 2
-    fnt = ImageFont.truetype('arial.ttf', font_size)
+    fnt = ImageFont.truetype('arialbd.ttf', font_size)
     offset_y = y
     draw.text((x, y), lines[0], font=fnt, fill=fgColor)
     offset_y += fnt_sizes[0][1] + padding
