@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to Document REST APIs in Spring Boot 2 and Generate an Swagger API Website Automatically
+title: How to Document REST APIs in Spring Boot and Generate a Swagger API Website Automatically
 description:
-image: /assets/2020-04-28-how-to-document-rest-apis-in-spring-boot-2-and-generate-an-swagger-api-website-automatically/banner.jpg
+image: /assets/2020-04-28-how-to-document-rest-apis-in-spring-boot-and-generate-a-swagger-api-website-automatically/banner.jpg
 categories:
     - code
 tags:
@@ -22,11 +22,11 @@ Open API Specification v3.0 is a broadly adopted industry standard for describin
 
 Access the URL of Spring Initializr <https://start.spring.io> in your browser. And we need to add Spring Web library here.
 
-![Spring Initializr](/assets/2020-04-28-how-to-document-rest-apis-in-spring-boot-2-and-generate-an-swagger-api-website-automatically/spring-initializr.jpg)
+![Spring Initializr](/assets/2020-04-28-how-to-document-rest-apis-in-spring-boot-and-generate-a-swagger-api-website-automatically/spring-initializr.jpg)
 
 Press **Generate** to download the project. In this guide, the project name is *demo*, therefore you can get a zip file named *demo.zip*. Unzip *demo.zip* and open the *demo* folder in your favorite editor or IDE to continue. In Visual Studio Code, it looks like:
 
-![Initialized Porject](/assets/2020-04-28-how-to-document-rest-apis-in-spring-boot-2-and-generate-an-swagger-api-website-automatically/initialized-project.jpg)
+![Initialized Porject](/assets/2020-04-28-how-to-document-rest-apis-in-spring-boot-and-generate-a-swagger-api-website-automatically/initialized-project.jpg)
 
 ## 2. Import springdoc-openapi Library
 
@@ -111,7 +111,7 @@ Run `mvn spring-boot:run` at the root directory of your project in your prompt.
 
 Open the browser and access `http://localhost:8080/swagger-ui.html`.
 
-![OpenAPI 3 Document](/assets/2020-04-28-how-to-document-rest-apis-in-spring-boot-2-and-generate-an-swagger-api-website-automatically/document.jpg)
+![OpenAPI 3 Document](/assets/2020-04-28-how-to-document-rest-apis-in-spring-boot-and-generate-a-swagger-api-website-automatically/document.jpg)
 
 ## Conclusion
 
