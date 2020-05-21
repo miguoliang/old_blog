@@ -20,7 +20,7 @@ However, by now, Spring does not ignore the controller level consume settings; t
 
 ## 1. Start a new project with a GET method REST API
 
-Generate a demo project follow the **TOP 5 STEPS**  in [How to Document REST APIs in Spring Boot and Generate a Swagger API Website Automatically](/how-to-document-rest-apis-in-spring-boot-and-generate-a-swagger-api-website-automatically). 
+Generate a demo project follow the **TOP 5 STEPS**  in [How to Document REST APIs in Spring Boot and Generate a Swagger API Website Automatically](/how-to-document-rest-apis-in-spring-boot-and-generate-a-swagger-api-website-automatically).
 
 Let us focus on core jobs next.
 
