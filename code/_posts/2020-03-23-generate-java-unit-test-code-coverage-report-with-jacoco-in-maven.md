@@ -112,8 +112,6 @@ Finally, a simple Java application project is generated.
 
 ![Directory Structure](/assets/2020-03-23-generate-java-unit-test-code-coverage-report-with-jacoco-in-maven/directory-structure.jpg)
 
-{%- include google-adsense-amp.html max-height="100" -%}
-
 ## Setup Compiler Plugin **IMPORTANT**
 
 We need set the source and target to 1.6 or higher in *Maven Compiler Plugin*, otherwise we can not compile our code in the next. Append following codes into *pom.xml*
@@ -243,13 +241,9 @@ The final code coverage report is saved in *target/site/jacoco*. Developers can 
 
 ![Index of Code Coverage Report](/assets/2020-03-23-generate-java-unit-test-code-coverage-report-with-jacoco-in-maven/index-code-coverage-report.jpg)
 
-{%- include google-adsense-amp.html max-height="100" -%}
-
 Besides, developers can locate to uncovered lines in a specific file easily.
 
 ![Uncovered Lines](/assets/2020-03-23-generate-java-unit-test-code-coverage-report-with-jacoco-in-maven/uncovered-lines.jpg)
-
-{%- include google-adsense-amp.html max-height="100" -%}
 
 **Note:** The Code Coverage Report is generated when all unit tests pass, in another words, you can not find the code coverage report if any unit test fails.
 

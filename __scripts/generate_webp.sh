@@ -18,3 +18,5 @@ ls assets/**/banner.jpg | awk -F. '{print $1}' | xargs -t -I {} convert {}.jpg  
 
 ## 非多尺寸兼容图 JPG 转换为 WebP 格式，同时保留原 JPG，保真度 80%
 ls assets/**/*.jpg | xargs -t -I {} cwebp -q 80 {} -o {}.webp
+## 非多尺寸兼容图 PNG 转换为 WebP 格式，同时保留原 PNG，保真度 80%
+ls assets/**/*.png | xargs -t -I {} cwebp -q 80 {} -o {}.webp
