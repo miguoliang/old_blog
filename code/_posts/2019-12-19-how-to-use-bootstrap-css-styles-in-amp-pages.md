@@ -96,8 +96,6 @@ layout: default_amp
 
     ![UnCSS Online](/assets/2019-12-19-how-to-use-bootstrap-css-styles-in-amp-pages/uncss.jpg)
 
-    {%- include google-adsense-amp.html max-height="100" -%}
-
 2. Copy HTML from *amp.html* to the left text box.
 3. Paste the source code of Bootstrap CSS to the right text box.
 4. Press **UNCSS MY STYLES**
@@ -115,8 +113,6 @@ Paste the source code that you just copied into *_includes/styles.scss*.
     *Note*: `#development=1` can start AMP validator, any exceptions will be printed on the console.
 
 ![Result](/assets/2019-12-19-how-to-use-bootstrap-css-styles-in-amp-pages/result.jpg)
-
-{%- include google-adsense-amp.html max-height="100" -%}
 
 *You can download full source code of the above demo from [my Github repository](https://github.com/miguoliang/effective-jekyll.git)*
 

@@ -234,8 +234,6 @@ margin-bottom: 5px;
 
 ![Screenshot](/assets/2019-12-7-how-to-build-a-dynamic-menu-with-jquery-plugin-in-angular-8/screenshot.gif)
 
-{%- include google-adsense-amp.html max-height="100" -%}
-
 *You can find [the demo's source code](https://github.com/miguoliang/metismenu-in-angular) in my github.*
 
 ## Conclusion

@@ -6,6 +6,10 @@ image: /assets/2020-04-30-how-to-start-an-asynchronized-task-in-spring-boot-2-wi
 categories:
     - code
 tags:
-    -
+    - java
+    - spring
+    - spring boot
+    - spring batch
 ---
+
 

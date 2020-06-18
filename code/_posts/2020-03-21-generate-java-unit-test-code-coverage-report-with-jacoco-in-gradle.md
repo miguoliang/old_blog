@@ -90,8 +90,6 @@ Finally, a simple Java application project is generated.
 
 ![Directory Structure](/assets/2020-03-21-generate-java-unit-test-code-coverage-report-with-jacoco-in-gradle/directory-structure.jpg)
 
-{%- include google-adsense-amp.html max-height="100" -%}
-
 ## Setup JaCoCo
 
 Open *build.gradle*, and append `id jacoco` into the *plugin* block.
@@ -182,13 +180,9 @@ The final code coverage report is saved in *build/reports/jacoco/test/html*. Dev
 
 ![Index of Code Coverage Report](/assets/2020-03-21-generate-java-unit-test-code-coverage-report-with-jacoco-in-gradle/index-code-coverage-report.jpg)
 
-{%- include google-adsense-amp.html max-height="100" -%}
-
 Besides, developers can locate to uncovered lines in a specific file easily.
 
 ![Uncovered Lines](/assets/2020-03-21-generate-java-unit-test-code-coverage-report-with-jacoco-in-gradle/uncovered-lines.jpg)
-
-{%- include google-adsense-amp.html max-height="100" -%}
 
 **Note:** The Code Coverage Report is generated when all unit tests pass, in another words, you can not find the code coverage report if any unit test fails.
 

@@ -13,8 +13,6 @@ When I format my Typescript file by clicking *Format Document* in the context me
 
 ![Parameters are not aligned](/assets/2020-1-27-typescript-how-to-fix-parameters-are-not-aligned-warning-in-vscode/screenshot-1.jpg)
 
-{%- include google-adsense-amp.html max-height="100" -%}
-
 The reason for this warning is the *Typescript Language Service* formatting rules are different from the tslint formatting rules on a function that has multiple and long parameters. And developers can not fix this warning by modifying options in *tslint.json*.
 
 In *tslint*, an allowed style is like this:
