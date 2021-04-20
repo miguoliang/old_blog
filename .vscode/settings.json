@@ -1,4 +1,5 @@
 {
     "terminal.integrated.fontFamily": "monospace",
-    "aws.onDefaultRegionMissing": "add"
+    "aws.onDefaultRegionMissing": "add",
+    "python.pythonPath": "/usr/bin/python"
 }
