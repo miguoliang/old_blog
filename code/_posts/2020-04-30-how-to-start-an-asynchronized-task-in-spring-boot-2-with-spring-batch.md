@@ -128,7 +128,7 @@ In **myJob** bean, you can known that **myJob** contains two steps: **step1** an
 
 Click *Run* in the *Spring Boot Dashboard*, and check the *Debug Console*
 
-![Final Output](assets/2020-04-30-how-to-start-an-asynchronized-task-in-spring-boot-with-spring-batch/image-1.jpg)
+![Final Output](assets/2020-04-30-how-to-start-an-asynchronized-task-in-spring-boot-2-with-spring-batch/image-1.jpg)
 
 ## Conclusion
 
