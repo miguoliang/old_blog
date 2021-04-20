@@ -60,7 +60,7 @@ def post_index():
 
 ## Start up the tiny server
 
-Run `python3 main.py` in your prompt, and it should look like:
+Run `flask run` in your prompt, and it should look like:
 
 ![Run](assets/2021-04-20-create-restful-apis-with-python-in-one-minute/run.jpg)
 
